@@ -2,7 +2,17 @@ source 'git://github.com/CocoaPods/Specs.git'
 use_frameworks!
 inhibit_all_warnings!
 
+target 'UnderControl-macOS' do
+  platform :osx, '10.12'
+  pod 'SwiftLint', '~> 0.18'
+end
+
 target 'UnderControlApp-macOS' do
+  platform :osx, '10.12'
+  pod 'SwiftLint', '~> 0.18'
+end
+
+target 'UnderControlTests-macOS' do
   platform :osx, '10.12'
   pod 'SwiftLint', '~> 0.18'
 end
