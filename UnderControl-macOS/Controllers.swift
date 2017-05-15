@@ -17,16 +17,16 @@ public class Controllers {
 
     // MARK: Controller connection observing
 
-    var controllerDidConnect: Observable<ControllerType> {
+    var controllerDidConnect: Observable<GCControllerType> {
         return controllerDidConnectSubject.asObservable()
     }
 
-    var controllerDidDisconnect: Observable<ControllerType> {
+    var controllerDidDisconnect: Observable<GCControllerType> {
         return controllerDidDisconnectSubject.asObservable()
     }
 
-    private let controllerDidConnectSubject = PublishSubject<ControllerType>()
-    private let controllerDidDisconnectSubject = PublishSubject<ControllerType>()
+    private let controllerDidConnectSubject = PublishSubject<GCControllerType>()
+    private let controllerDidDisconnectSubject = PublishSubject<GCControllerType>()
     private var controllerDidConnectObserver: Any?
     private var controllerDidDisconnectObserver: Any?
 
@@ -36,7 +36,7 @@ public class Controllers {
             object: nil,
             queue: OperationQueue.main,
             using: { [weak self] in
-                guard let controller = $0.object as? ControllerType else { return }
+                guard let controller = $0.object as? GCControllerType else { return }
                 self?.controllerDidConnectSubject.onNext(controller)
             }
         )
@@ -45,7 +45,7 @@ public class Controllers {
             object: nil,
             queue: OperationQueue.main,
             using: { [weak self] in
-                guard let controller = $0.object as? ControllerType else { return }
+                guard let controller = $0.object as? GCControllerType else { return }
                 self?.controllerDidDisconnectSubject.onNext(controller)
             }
         )
