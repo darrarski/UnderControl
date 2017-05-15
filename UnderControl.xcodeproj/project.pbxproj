@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3171AE841EC91FF5005003BE /* UnderControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FA7A541EC91523000669FD /* UnderControl.framework */; };
+		31C5118A1ECA5DC000361D53 /* ControllersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C511891ECA5DC000361D53 /* ControllersSpec.swift */; };
 		31FA7A0B1EC90F7F000669FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA7A0A1EC90F7F000669FD /* AppDelegate.swift */; };
 		31FA7A0D1EC90F7F000669FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA7A0C1EC90F7F000669FD /* ViewController.swift */; };
 		31FA7A0F1EC90F7F000669FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31FA7A0E1EC90F7F000669FD /* Assets.xcassets */; };
 		31FA7A121EC90F7F000669FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FA7A101EC90F7F000669FD /* Main.storyboard */; };
-		31FA7A641EC91524000669FD /* UnderControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA7A631EC91524000669FD /* UnderControlTests.swift */; };
 		31FA7A661EC91524000669FD /* UnderControl-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 31FA7A561EC91523000669FD /* UnderControl-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31FA7A741EC91645000669FD /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA7A731EC91645000669FD /* Controllers.swift */; };
 		31FA7A7A1EC918F1000669FD /* UnderControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FA7A541EC91523000669FD /* UnderControl.framework */; };
@@ -55,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		24ADD3D821F379946030336E /* Pods_UnderControlApp_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderControlApp_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31C511891ECA5DC000361D53 /* ControllersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllersSpec.swift; sourceTree = "<group>"; };
 		31FA7A071EC90F7F000669FD /* UnderControlApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnderControlApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FA7A0A1EC90F7F000669FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31FA7A0C1EC90F7F000669FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +66,6 @@
 		31FA7A561EC91523000669FD /* UnderControl-macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnderControl-macOS.h"; sourceTree = "<group>"; };
 		31FA7A571EC91523000669FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31FA7A5C1EC91524000669FD /* UnderControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnderControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		31FA7A631EC91524000669FD /* UnderControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderControlTests.swift; sourceTree = "<group>"; };
 		31FA7A651EC91524000669FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31FA7A731EC91645000669FD /* Controllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllers.swift; sourceTree = "<group>"; };
 		3CD601D38A8A55323D02EFE0 /* Pods-UnderControlApp-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderControlApp-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnderControlApp-macOS/Pods-UnderControlApp-macOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31C511881ECA5DA900361D53 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				31C511891ECA5DC000361D53 /* ControllersSpec.swift */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
 		31FA79FE1EC90F7F000669FD = {
 			isa = PBXGroup;
 			children = (
@@ -186,8 +194,8 @@
 		31FA7A621EC91524000669FD /* UnderControlTests-macOS */ = {
 			isa = PBXGroup;
 			children = (
+				31C511881ECA5DA900361D53 /* Specs */,
 				31FA7A721EC915E3000669FD /* Supporting Files */,
-				31FA7A631EC91524000669FD /* UnderControlTests.swift */,
 			);
 			path = "UnderControlTests-macOS";
 			sourceTree = "<group>";
@@ -570,7 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31FA7A641EC91524000669FD /* UnderControlTests.swift in Sources */,
+				31C5118A1ECA5DC000361D53 /* ControllersSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
