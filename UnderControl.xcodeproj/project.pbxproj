@@ -10,6 +10,7 @@
 		3171AE841EC91FF5005003BE /* UnderControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FA7A541EC91523000669FD /* UnderControl.framework */; };
 		31C5118A1ECA5DC000361D53 /* ControllersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C511891ECA5DC000361D53 /* ControllersSpec.swift */; };
 		31C5118C1ECA60D600361D53 /* ControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C5118B1ECA60D600361D53 /* ControllerType.swift */; };
+		31C5118F1ECA613600361D53 /* ControllerDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C5118E1ECA613600361D53 /* ControllerDouble.swift */; };
 		31FA7A0B1EC90F7F000669FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA7A0A1EC90F7F000669FD /* AppDelegate.swift */; };
 		31FA7A0D1EC90F7F000669FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA7A0C1EC90F7F000669FD /* ViewController.swift */; };
 		31FA7A0F1EC90F7F000669FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31FA7A0E1EC90F7F000669FD /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		24ADD3D821F379946030336E /* Pods_UnderControlApp_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderControlApp_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C511891ECA5DC000361D53 /* ControllersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllersSpec.swift; sourceTree = "<group>"; };
 		31C5118B1ECA60D600361D53 /* ControllerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerType.swift; sourceTree = "<group>"; };
+		31C5118E1ECA613600361D53 /* ControllerDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerDouble.swift; sourceTree = "<group>"; };
 		31FA7A071EC90F7F000669FD /* UnderControlApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnderControlApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FA7A0A1EC90F7F000669FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31FA7A0C1EC90F7F000669FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 				31C511891ECA5DC000361D53 /* ControllersSpec.swift */,
 			);
 			path = Specs;
+			sourceTree = "<group>";
+		};
+		31C5118D1ECA612900361D53 /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				31C5118E1ECA613600361D53 /* ControllerDouble.swift */,
+			);
+			path = Doubles;
 			sourceTree = "<group>";
 		};
 		31FA79FE1EC90F7F000669FD = {
@@ -197,6 +207,7 @@
 		31FA7A621EC91524000669FD /* UnderControlTests-macOS */ = {
 			isa = PBXGroup;
 			children = (
+				31C5118D1ECA612900361D53 /* Doubles */,
 				31C511881ECA5DA900361D53 /* Specs */,
 				31FA7A721EC915E3000669FD /* Supporting Files */,
 			);
@@ -582,6 +593,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C5118F1ECA613600361D53 /* ControllerDouble.swift in Sources */,
 				31C5118A1ECA5DC000361D53 /* ControllersSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
