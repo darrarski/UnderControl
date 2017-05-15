@@ -35,11 +35,11 @@ class ControllersSpec: QuickSpec {
 
                 context("did connect") {
                     var scheduler: TestScheduler!
-                    var observer: TestableObserver<GCControllerType>!
+                    var observer: TestableObserver<Controller>!
 
                     beforeEach {
                         scheduler = TestScheduler(initialClock: 0)
-                        observer = scheduler.createObserver(GCControllerType.self)
+                        observer = scheduler.createObserver(Controller.self)
                         _ = sut.controllerDidConnect.subscribe(observer)
                         notificationCenter.post(name: Notification.Name.GCControllerDidConnect, object: gcController)
                     }
@@ -49,17 +49,17 @@ class ControllersSpec: QuickSpec {
                     }
 
                     it("should produce correct event") {
-                        expect(observer.events.first?.value.element).to(be(gcController))
+                        expect(observer.events.first?.value.element?.gcController).to(be(gcController))
                     }
                 }
 
                 context("did disconnect") {
                     var scheduler: TestScheduler!
-                    var observer: TestableObserver<GCControllerType>!
+                    var observer: TestableObserver<Controller>!
 
                     beforeEach {
                         scheduler = TestScheduler(initialClock: 0)
-                        observer = scheduler.createObserver(GCControllerType.self)
+                        observer = scheduler.createObserver(Controller.self)
                         _ = sut.controllerDidDisconnect.subscribe(observer)
                         notificationCenter.post(name: Notification.Name.GCControllerDidDisconnect, object: gcController)
                     }
@@ -69,7 +69,7 @@ class ControllersSpec: QuickSpec {
                     }
 
                     it("should produce correct event") {
-                        expect(observer.events.first?.value.element).to(be(gcController))
+                        expect(observer.events.first?.value.element?.gcController).to(be(gcController))
                     }
                 }
             }
@@ -77,11 +77,11 @@ class ControllersSpec: QuickSpec {
             describe("invalid controller") {
                 context("did connect") {
                     var scheduler: TestScheduler!
-                    var observer: TestableObserver<GCControllerType>!
+                    var observer: TestableObserver<Controller>!
 
                     beforeEach {
                         scheduler = TestScheduler(initialClock: 0)
-                        observer = scheduler.createObserver(GCControllerType.self)
+                        observer = scheduler.createObserver(Controller.self)
                         _ = sut.controllerDidConnect.subscribe(observer)
                         notificationCenter.post(
                             name: Notification.Name.GCControllerDidConnect,
@@ -96,11 +96,11 @@ class ControllersSpec: QuickSpec {
 
                 context("did disconnect") {
                     var scheduler: TestScheduler!
-                    var observer: TestableObserver<GCControllerType>!
+                    var observer: TestableObserver<Controller>!
 
                     beforeEach {
                         scheduler = TestScheduler(initialClock: 0)
-                        observer = scheduler.createObserver(GCControllerType.self)
+                        observer = scheduler.createObserver(Controller.self)
                         _ = sut.controllerDidDisconnect.subscribe(observer)
                         notificationCenter.post(
                             name: Notification.Name.GCControllerDidDisconnect,
