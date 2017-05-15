@@ -9,16 +9,16 @@ class ControllersSpec: QuickSpec {
 
     override func spec() {
         describe("Controllers") {
-            var controllers: Controllers!
+            var sut: Controllers!
             var notificationCenter: NotificationCenter!
 
             beforeEach {
                 notificationCenter = NotificationCenter()
-                controllers = Controllers(notificationCenter: notificationCenter)
+                sut = Controllers(notificationCenter: notificationCenter)
             }
 
             afterEach {
-                controllers = nil
+                sut = nil
                 notificationCenter = nil
             }
 
@@ -40,7 +40,7 @@ class ControllersSpec: QuickSpec {
                     beforeEach {
                         scheduler = TestScheduler(initialClock: 0)
                         observer = scheduler.createObserver(ControllerType.self)
-                        _ = controllers.controllerDidConnect.subscribe(observer)
+                        _ = sut.controllerDidConnect.subscribe(observer)
                         notificationCenter.post(name: Notification.Name.GCControllerDidConnect, object: controller)
                     }
 
@@ -60,7 +60,7 @@ class ControllersSpec: QuickSpec {
                     beforeEach {
                         scheduler = TestScheduler(initialClock: 0)
                         observer = scheduler.createObserver(ControllerType.self)
-                        _ = controllers.controllerDidDisconnect.subscribe(observer)
+                        _ = sut.controllerDidDisconnect.subscribe(observer)
                         notificationCenter.post(name: Notification.Name.GCControllerDidDisconnect, object: controller)
                     }
 
@@ -82,7 +82,7 @@ class ControllersSpec: QuickSpec {
                     beforeEach {
                         scheduler = TestScheduler(initialClock: 0)
                         observer = scheduler.createObserver(ControllerType.self)
-                        _ = controllers.controllerDidConnect.subscribe(observer)
+                        _ = sut.controllerDidConnect.subscribe(observer)
                         notificationCenter.post(
                             name: Notification.Name.GCControllerDidConnect,
                             object: "not a controller"
@@ -101,7 +101,7 @@ class ControllersSpec: QuickSpec {
                     beforeEach {
                         scheduler = TestScheduler(initialClock: 0)
                         observer = scheduler.createObserver(ControllerType.self)
-                        _ = controllers.controllerDidDisconnect.subscribe(observer)
+                        _ = sut.controllerDidDisconnect.subscribe(observer)
                         notificationCenter.post(
                             name: Notification.Name.GCControllerDidDisconnect,
                             object: "not a controller"
