@@ -1,5 +1,5 @@
 import GameController
 
-protocol GCControllerType {}
+public protocol GCControllerType {}
 
 extension GCController: GCControllerType {}
