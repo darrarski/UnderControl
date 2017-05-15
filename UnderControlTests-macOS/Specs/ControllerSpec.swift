@@ -16,11 +16,6 @@ class ControllerSpec: QuickSpec {
                 sut = Controller(gcController: gcController)
             }
 
-            afterEach {
-                sut = nil
-                gcController = nil
-            }
-
             it("should have correct gcController") {
                 expect(sut.gcController).to(be(gcController))
             }

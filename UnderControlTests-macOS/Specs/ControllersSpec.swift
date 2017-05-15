@@ -16,20 +16,11 @@ class ControllersSpec: QuickSpec {
                 sut = Controllers(notificationCenter: notificationCenter)
             }
 
-            afterEach {
-                sut = nil
-                notificationCenter = nil
-            }
-
             describe("controller") {
                 var gcController: GCControllerDouble!
 
                 beforeEach {
                     gcController = GCControllerDouble()
-                }
-
-                afterEach {
-                    gcController = nil
                 }
 
                 context("did connect") {
