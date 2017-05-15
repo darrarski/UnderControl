@@ -20,4 +20,5 @@ target 'UnderControlTests-macOS' do
 	pod 'RxSwift', '~> 3.4'
 	pod 'Quick', '~> 1.1'
 	pod 'Nimble', '~> 7.0'
+	pod 'RxTest', '~> 3.4'
 end
