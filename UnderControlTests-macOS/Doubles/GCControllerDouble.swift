@@ -1,3 +1,8 @@
+import GameController
 @testable import UnderControl
 
-class GCControllerDouble: GCControllerType {}
+class GCControllerDouble: GCControllerType {
+
+    var controllerPausedHandler: ((GCController) -> Void)?
+
+}
