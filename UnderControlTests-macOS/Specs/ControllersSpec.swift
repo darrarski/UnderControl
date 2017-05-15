@@ -1,7 +1,6 @@
 import Quick
 import Nimble
 import RxTest
-import Foundation
 import GameController
 @testable import UnderControl
 
