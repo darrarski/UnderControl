@@ -17,11 +17,11 @@ public class Controllers {
 
     // MARK: Controller connection observing
 
-    var controllerDidConnect: Observable<Controller> {
+    public var controllerDidConnect: Observable<Controller> {
         return controllerDidConnectSubject.asObservable()
     }
 
-    var controllerDidDisconnect: Observable<Controller> {
+    public var controllerDidDisconnect: Observable<Controller> {
         return controllerDidDisconnectSubject.asObservable()
     }
 
