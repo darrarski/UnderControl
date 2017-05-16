@@ -9,7 +9,7 @@ class ControllerSpec: QuickSpec {
     override func spec() {
         describe("Controller") {
             var sut: Controller!
-            var gcController: GCControllerType!
+            var gcController: GCControllerDouble!
 
             beforeEach {
                 gcController = GCControllerDouble()
@@ -18,6 +18,10 @@ class ControllerSpec: QuickSpec {
 
             it("should have correct gcController") {
                 expect(sut.gcController).to(be(gcController))
+            }
+
+            it("should have no gamepad") {
+                expect(sut.gamepad).to(beNil())
             }
 
             context("pause button press") {
@@ -33,6 +37,34 @@ class ControllerSpec: QuickSpec {
 
                 it("should produce one event") {
                     expect(observer.events.count).to(equal(1))
+                }
+            }
+        }
+
+        describe("Controller with Gamepad") {
+            var sut: Controller!
+            var gcGamepad: GCGamepadDouble!
+
+            beforeEach {
+                gcGamepad = GCGamepadDouble()
+                let gcController = GCControllerDouble()
+                gcController.gcGamepad = gcGamepad
+                sut = Controller(gcController: gcController)
+            }
+
+            describe("Gamepad") {
+                var gamepad: Gamepad!
+
+                beforeEach {
+                    gamepad = sut.gamepad
+                }
+
+                it("should not be nil") {
+                    expect(gamepad).notTo(beNil())
+                }
+
+                it("should have correct gcGamepad") {
+                    expect(gamepad.gcGamepad).to(be(gcGamepad))
                 }
             }
         }

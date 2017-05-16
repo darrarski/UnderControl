@@ -4,6 +4,7 @@ public class Controller {
 
     public init(gcController: GCControllerType) {
         self.gcController = gcController
+        gamepad = Gamepad(gcGamepad: gcController.gcGamepad)
         setupHandlers()
     }
 
@@ -12,6 +13,8 @@ public class Controller {
     public var pauseButtonPress: Observable<Void> {
         return pauseButtonPressSubject.asObservable()
     }
+
+    public let gamepad: Gamepad?
 
     private let pauseButtonPressSubject = PublishSubject<Void>()
 
