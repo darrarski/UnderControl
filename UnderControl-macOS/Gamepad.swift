@@ -5,6 +5,8 @@ public class Gamepad {
 
     public init(gcGamepad: GCGamepad) {
         self.gcGamepad = gcGamepad
+        leftShoulder = Button(gcButton: gcGamepad.leftShoulder)
+        rightShoulder = Button(gcButton: gcGamepad.rightShoulder)
         buttonA = Button(gcButton: gcGamepad.buttonA)
         buttonB = Button(gcButton: gcGamepad.buttonB)
         buttonX = Button(gcButton: gcGamepad.buttonX)
@@ -14,6 +16,8 @@ public class Gamepad {
 
     public let gcGamepad: GCGamepad
 
+    public let leftShoulder: Button
+    public let rightShoulder: Button
     public let buttonA: Button
     public let buttonB: Button
     public let buttonX: Button

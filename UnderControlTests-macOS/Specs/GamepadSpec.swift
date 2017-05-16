@@ -20,6 +20,30 @@ class GamepadSpec: QuickSpec {
                 expect(sut.gcGamepad).to(be(gcGamepad))
             }
 
+            describe("leftShoulder") {
+                var button: Button!
+
+                beforeEach {
+                    button = sut.leftShoulder
+                }
+
+                it("should have correct gcButton") {
+                    expect(button.gcButton).to(be(gcGamepad.leftShoulder))
+                }
+            }
+
+            describe("rightShoulder") {
+                var button: Button!
+
+                beforeEach {
+                    button = sut.leftShoulder
+                }
+
+                it("should have correct gcButton") {
+                    expect(button.gcButton).to(be(gcGamepad.leftShoulder))
+                }
+            }
+
             describe("buttonA") {
                 var button: Button!
 

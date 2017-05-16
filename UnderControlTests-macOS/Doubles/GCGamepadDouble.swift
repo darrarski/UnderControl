@@ -9,6 +9,12 @@ class GCGamepadDouble: GCGamepad {
     }
     private var _valueChangedHandler: GCGamepadValueChangedHandler?
 
+    override var leftShoulder: GCControllerButtonInput { return _leftShoulder }
+    private var _leftShoulder = GCControllerButtonInputDouble()
+
+    override var rightShoulder: GCControllerButtonInput { return _rightShoulder }
+    private var _rightShoulder = GCControllerButtonInputDouble()
+
     override var buttonA: GCControllerButtonInput { return _buttonA }
     private var _buttonA = GCControllerButtonInputDouble()
 
