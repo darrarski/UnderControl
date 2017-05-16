@@ -10,14 +10,14 @@ public class Gamepad {
 
     public let gcGamepad: GCGamepad
 
-    public var valueChanged: Observable<Void> {
+    public var valueChanged: Observable<GCControllerElement> {
         return valueChangedSubject.asObservable()
     }
 
-    private let valueChangedSubject = PublishSubject<Void>()
+    private let valueChangedSubject = PublishSubject<GCControllerElement>()
 
     private func setupHandlers() {
-        gcGamepad.valueChangedHandler = { [weak self] _ in self?.valueChangedSubject.onNext() }
+        gcGamepad.valueChangedHandler = { [weak self] in self?.valueChangedSubject.onNext($1) }
     }
 
 }

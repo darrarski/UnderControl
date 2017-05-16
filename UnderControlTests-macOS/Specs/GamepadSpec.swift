@@ -22,17 +22,23 @@ class GamepadSpec: QuickSpec {
 
             context("value changed") {
                 var scheduler: TestScheduler!
-                var observer: TestableObserver<Void>!
+                var observer: TestableObserver<GCControllerElement>!
+                var element: GCControllerElement!
 
                 beforeEach {
                     scheduler = TestScheduler(initialClock: 0)
-                    observer = scheduler.createObserver(Void.self)
+                    observer = scheduler.createObserver(GCControllerElement.self)
+                    element = GCControllerElement()
                     _ = sut.valueChanged.subscribe(observer)
-                    gcGamepad.valueChangedHandler?(gcGamepad, GCControllerElement())
+                    gcGamepad.valueChangedHandler?(gcGamepad, element)
                 }
 
                 it("should produce one event") {
                     expect(observer.events.count).to(equal(1))
+                }
+
+                it("should pass correct element") {
+                    expect(observer.events.first?.value.element).to(be(element))
                 }
             }
         }
