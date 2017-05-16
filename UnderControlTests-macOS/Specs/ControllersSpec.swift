@@ -31,7 +31,10 @@ class ControllersSpec: QuickSpec {
                         scheduler = TestScheduler(initialClock: 0)
                         observer = scheduler.createObserver(Controller.self)
                         _ = sut.controllerDidConnect.subscribe(observer)
-                        notificationCenter.post(name: Notification.Name.GCControllerDidConnect, object: gcController)
+                        notificationCenter.post(
+                            name: Notification.Name.GCControllerDidConnect,
+                            object: gcController
+                        )
                     }
 
                     it("should produce one event") {
@@ -51,7 +54,10 @@ class ControllersSpec: QuickSpec {
                         scheduler = TestScheduler(initialClock: 0)
                         observer = scheduler.createObserver(Controller.self)
                         _ = sut.controllerDidDisconnect.subscribe(observer)
-                        notificationCenter.post(name: Notification.Name.GCControllerDidDisconnect, object: gcController)
+                        notificationCenter.post(
+                            name: Notification.Name.GCControllerDidDisconnect,
+                            object: gcController
+                        )
                     }
 
                     it("should produce one event") {
