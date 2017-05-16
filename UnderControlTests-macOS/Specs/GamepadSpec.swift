@@ -36,11 +36,11 @@ class GamepadSpec: QuickSpec {
                 var button: Button!
 
                 beforeEach {
-                    button = sut.leftShoulder
+                    button = sut.rightShoulder
                 }
 
                 it("should have correct gcButton") {
-                    expect(button.gcButton).to(be(gcGamepad.leftShoulder))
+                    expect(button.gcButton).to(be(gcGamepad.rightShoulder))
                 }
             }
 
