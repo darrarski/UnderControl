@@ -21,3 +21,12 @@ public class Gamepad {
     }
 
 }
+
+extension Gamepad {
+
+    public convenience init?(gcGamepad: GCGamepadType?) {
+        guard let gcGamepad = gcGamepad else { return nil }
+        self.init(gcGamepad: gcGamepad)
+    }
+
+}
