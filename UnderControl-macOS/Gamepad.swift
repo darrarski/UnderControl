@@ -5,10 +5,19 @@ public class Gamepad {
 
     public init(gcGamepad: GCGamepad) {
         self.gcGamepad = gcGamepad
+        buttonA = Button(gcButton: gcGamepad.buttonA)
+        buttonB = Button(gcButton: gcGamepad.buttonB)
+        buttonX = Button(gcButton: gcGamepad.buttonX)
+        buttonY = Button(gcButton: gcGamepad.buttonY)
         setupHandlers()
     }
 
     public let gcGamepad: GCGamepad
+
+    public let buttonA: Button
+    public let buttonB: Button
+    public let buttonX: Button
+    public let buttonY: Button
 
     public var valueChanged: Observable<GCControllerElement> {
         return valueChangedSubject.asObservable()
