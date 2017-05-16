@@ -14,6 +14,8 @@
 		31C511911ECA6D1F00361D53 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C511901ECA6D1F00361D53 /* Controller.swift */; };
 		31C511931ECA6EF800361D53 /* ControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C511921ECA6EF800361D53 /* ControllerSpec.swift */; };
 		31DECB451ECBA152000AEE0E /* GCGamepadType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB441ECBA152000AEE0E /* GCGamepadType.swift */; };
+		31DECB471ECBA268000AEE0E /* Gamepad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB461ECBA268000AEE0E /* Gamepad.swift */; };
+		31DECB491ECBA2A0000AEE0E /* GamepadSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB481ECBA2A0000AEE0E /* GamepadSpec.swift */; };
 		31DECB4B1ECBA2CF000AEE0E /* GCGamepadDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB4A1ECBA2CF000AEE0E /* GCGamepadDouble.swift */; };
 		31FA7A0B1EC90F7F000669FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA7A0A1EC90F7F000669FD /* AppDelegate.swift */; };
 		31FA7A0D1EC90F7F000669FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA7A0C1EC90F7F000669FD /* ViewController.swift */; };
@@ -67,6 +69,8 @@
 		31C511901ECA6D1F00361D53 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		31C511921ECA6EF800361D53 /* ControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerSpec.swift; sourceTree = "<group>"; };
 		31DECB441ECBA152000AEE0E /* GCGamepadType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCGamepadType.swift; sourceTree = "<group>"; };
+		31DECB461ECBA268000AEE0E /* Gamepad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gamepad.swift; sourceTree = "<group>"; };
+		31DECB481ECBA2A0000AEE0E /* GamepadSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamepadSpec.swift; sourceTree = "<group>"; };
 		31DECB4A1ECBA2CF000AEE0E /* GCGamepadDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCGamepadDouble.swift; sourceTree = "<group>"; };
 		31FA7A071EC90F7F000669FD /* UnderControlApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnderControlApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FA7A0A1EC90F7F000669FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 			children = (
 				31C511921ECA6EF800361D53 /* ControllerSpec.swift */,
 				31C511891ECA5DC000361D53 /* ControllersSpec.swift */,
+				31DECB481ECBA2A0000AEE0E /* GamepadSpec.swift */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 				31FA7A731EC91645000669FD /* Controllers.swift */,
 				31C5118B1ECA60D600361D53 /* GCControllerType.swift */,
 				31DECB441ECBA152000AEE0E /* GCGamepadType.swift */,
+				31DECB461ECBA268000AEE0E /* Gamepad.swift */,
 			);
 			path = "UnderControl-macOS";
 			sourceTree = "<group>";
@@ -597,6 +603,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31C511911ECA6D1F00361D53 /* Controller.swift in Sources */,
+				31DECB471ECBA268000AEE0E /* Gamepad.swift in Sources */,
 				31DECB451ECBA152000AEE0E /* GCGamepadType.swift in Sources */,
 				31FA7A741EC91645000669FD /* Controllers.swift in Sources */,
 				31C5118C1ECA60D600361D53 /* GCControllerType.swift in Sources */,
@@ -610,6 +617,7 @@
 				31DECB4B1ECBA2CF000AEE0E /* GCGamepadDouble.swift in Sources */,
 				31C5118F1ECA613600361D53 /* GCControllerDouble.swift in Sources */,
 				31C511931ECA6EF800361D53 /* ControllerSpec.swift in Sources */,
+				31DECB491ECBA2A0000AEE0E /* GamepadSpec.swift in Sources */,
 				31C5118A1ECA5DC000361D53 /* ControllersSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
