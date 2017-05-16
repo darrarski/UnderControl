@@ -7,7 +7,6 @@ class GCGamepadDouble: GCGamepad {
         get { return _valueChangedHandler }
         set { _valueChangedHandler = newValue }
     }
-
     private var _valueChangedHandler: GCGamepadValueChangedHandler?
 
     override var buttonA: GCControllerButtonInput { return _buttonA }
