@@ -68,5 +68,33 @@ class ControllerSpec: QuickSpec {
                 }
             }
         }
+
+        describe("Controller with MicroGamepad") {
+            var sut: Controller!
+            var gcMicroGamepad: GCMicroGamepadDouble!
+
+            beforeEach {
+                gcMicroGamepad = GCMicroGamepadDouble()
+                let gcController = GCControllerDouble()
+                gcController.microGamepad = gcMicroGamepad
+                sut = Controller(gcController: gcController)
+            }
+
+            describe("MicroGamepad") {
+                var microGamepad: MicroGamepad!
+
+                beforeEach {
+                    microGamepad = sut.microGamepad
+                }
+
+                it("should not be nil") {
+                    expect(microGamepad).notTo(beNil())
+                }
+
+                it("should have correct gcMicroGamepad") {
+                    expect(microGamepad.gcMicroGamepad).to(be(gcMicroGamepad))
+                }
+            }
+        }
     }
 }

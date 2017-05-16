@@ -6,6 +6,7 @@ public class Controller {
     public init(gcController: GCController) {
         self.gcController = gcController
         gamepad = Gamepad(gcGamepad: gcController.gamepad)
+        microGamepad = MicroGamepad(gcMicroGamepad: gcController.microGamepad)
         setupHandlers()
     }
 
@@ -16,6 +17,7 @@ public class Controller {
     }
 
     public let gamepad: Gamepad?
+    public let microGamepad: MicroGamepad?
 
     private let pauseButtonPressSubject = PublishSubject<Void>()
 
