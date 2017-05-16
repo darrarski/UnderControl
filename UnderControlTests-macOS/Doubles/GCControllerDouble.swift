@@ -15,6 +15,12 @@ class GCControllerDouble: GCController {
     }
     private var _gamepad: GCGamepad?
 
+    override var extendedGamepad: GCExtendedGamepad? {
+        get { return _extendedGamepad }
+        set { _extendedGamepad = newValue }
+    }
+    private var _extendedGamepad: GCExtendedGamepad?
+
     override var microGamepad: GCMicroGamepad? {
         get { return _microGamepad }
         set { _microGamepad = newValue }

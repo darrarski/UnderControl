@@ -52,7 +52,7 @@ class ControllerSpec: QuickSpec {
                 sut = Controller(gcController: gcController)
             }
 
-            describe("Gamepad") {
+            describe("gamepad") {
                 var gamepad: Gamepad!
 
                 beforeEach {
@@ -80,7 +80,7 @@ class ControllerSpec: QuickSpec {
                 sut = Controller(gcController: gcController)
             }
 
-            describe("MicroGamepad") {
+            describe("microGamepad") {
                 var microGamepad: MicroGamepad!
 
                 beforeEach {
@@ -93,6 +93,34 @@ class ControllerSpec: QuickSpec {
 
                 it("should have correct gcMicroGamepad") {
                     expect(microGamepad.gcMicroGamepad).to(be(gcMicroGamepad))
+                }
+            }
+        }
+
+        describe("Controller with ExteddedGamepad") {
+            var sut: Controller!
+            var gcExtendedGamepad: GCExtendedGamepadDouble!
+
+            beforeEach {
+                gcExtendedGamepad = GCExtendedGamepadDouble()
+                let gcController = GCControllerDouble()
+                gcController.extendedGamepad = gcExtendedGamepad
+                sut = Controller(gcController: gcController)
+            }
+
+            describe("extendedGamepad") {
+                var extendedGamepad: ExtendedGamepad!
+
+                beforeEach {
+                    extendedGamepad = sut.extendedGamepad
+                }
+
+                it("should not be nil") {
+                    expect(extendedGamepad).notTo(beNil())
+                }
+
+                it("should have correct gcExtendedGamepad") {
+                    expect(extendedGamepad.gcExtendedGamepad).to(be(gcExtendedGamepad))
                 }
             }
         }
