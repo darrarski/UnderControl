@@ -9,7 +9,7 @@ class GamepadSpec: QuickSpec {
     override func spec() {
         describe("Gamepad") {
             var sut: Gamepad!
-            var gcGamepad: GCGamepadType!
+            var gcGamepad: GCGamepadDouble!
 
             beforeEach {
                 gcGamepad = GCGamepadDouble()
@@ -28,7 +28,7 @@ class GamepadSpec: QuickSpec {
                     scheduler = TestScheduler(initialClock: 0)
                     observer = scheduler.createObserver(Void.self)
                     _ = sut.valueChanged.subscribe(observer)
-                    gcGamepad.valueChangedHandler?(GCGamepad(), GCControllerElement())
+                    gcGamepad.valueChangedHandler?(gcGamepad, GCControllerElement())
                 }
 
                 it("should produce one event") {

@@ -9,7 +9,7 @@ class ControllerSpec: QuickSpec {
     override func spec() {
         describe("Controller") {
             var sut: Controller!
-            var gcController: GCControllerDouble!
+            var gcController: GCController!
 
             beforeEach {
                 gcController = GCControllerDouble()
@@ -32,7 +32,7 @@ class ControllerSpec: QuickSpec {
                     scheduler = TestScheduler(initialClock: 0)
                     observer = scheduler.createObserver(Void.self)
                     _ = sut.pauseButtonPress.subscribe(observer)
-                    gcController.controllerPausedHandler?(GCController())
+                    gcController.controllerPausedHandler?(gcController)
                 }
 
                 it("should produce one event") {
@@ -48,7 +48,7 @@ class ControllerSpec: QuickSpec {
             beforeEach {
                 gcGamepad = GCGamepadDouble()
                 let gcController = GCControllerDouble()
-                gcController.gcGamepad = gcGamepad
+                gcController.gamepad = gcGamepad
                 sut = Controller(gcController: gcController)
             }
 

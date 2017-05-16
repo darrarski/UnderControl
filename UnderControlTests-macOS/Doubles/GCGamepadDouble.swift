@@ -1,8 +1,13 @@
 import GameController
 @testable import UnderControl
 
-class GCGamepadDouble: GCGamepadType {
+class GCGamepadDouble: GCGamepad {
 
-    var valueChangedHandler: GCGamepadValueChangedHandler?
+    override var valueChangedHandler: GCGamepadValueChangedHandler? {
+        get { return _valueChangedHandler }
+        set { _valueChangedHandler = newValue }
+    }
+
+    private var _valueChangedHandler: GCGamepadValueChangedHandler?
 
 }

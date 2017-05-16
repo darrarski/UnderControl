@@ -36,7 +36,7 @@ public class Controllers {
             object: nil,
             queue: OperationQueue.main,
             using: { [weak self] in
-                guard let gcController = $0.object as? GCControllerType else { return }
+                guard let gcController = $0.object as? GCController else { return }
                 let controller = Controller(gcController: gcController)
                 self?.controllerDidConnectSubject.onNext(controller)
             }
@@ -46,7 +46,7 @@ public class Controllers {
             object: nil,
             queue: OperationQueue.main,
             using: { [weak self] in
-                guard let gcController = $0.object as? GCControllerType else { return }
+                guard let gcController = $0.object as? GCController else { return }
                 let controller = Controller(gcController: gcController)
                 self?.controllerDidDisconnectSubject.onNext(controller)
             }

@@ -1,14 +1,15 @@
+import GameController
 import RxSwift
 
 public class Controller {
 
-    public init(gcController: GCControllerType) {
+    public init(gcController: GCController) {
         self.gcController = gcController
-        gamepad = Gamepad(gcGamepad: gcController.gcGamepad)
+        gamepad = Gamepad(gcGamepad: gcController.gamepad)
         setupHandlers()
     }
 
-    public let gcController: GCControllerType
+    public let gcController: GCController
 
     public var pauseButtonPress: Observable<Void> {
         return pauseButtonPressSubject.asObservable()

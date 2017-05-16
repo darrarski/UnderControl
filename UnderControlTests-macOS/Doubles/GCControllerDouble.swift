@@ -1,9 +1,20 @@
 import GameController
 @testable import UnderControl
 
-class GCControllerDouble: GCControllerType {
+class GCControllerDouble: GCController {
 
-    var controllerPausedHandler: ((GCController) -> Void)?
-    var gcGamepad: GCGamepadType?
+    override var controllerPausedHandler: ((GCController) -> Void)? {
+        get { return _controllerPausedHandler }
+        set { _controllerPausedHandler = newValue }
+    }
+
+    private var _controllerPausedHandler: ((GCController) -> Void)?
+
+    override var gamepad: GCGamepad? {
+        get { return _gamepad }
+        set { _gamepad = newValue }
+    }
+
+    private var _gamepad: GCGamepad?
 
 }

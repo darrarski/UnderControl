@@ -3,12 +3,12 @@ import RxSwift
 
 public class Gamepad {
 
-    public init(gcGamepad: GCGamepadType) {
+    public init(gcGamepad: GCGamepad) {
         self.gcGamepad = gcGamepad
         setupHandlers()
     }
 
-    public let gcGamepad: GCGamepadType
+    public let gcGamepad: GCGamepad
 
     public var valueChanged: Observable<Void> {
         return valueChangedSubject.asObservable()
@@ -24,7 +24,7 @@ public class Gamepad {
 
 extension Gamepad {
 
-    public convenience init?(gcGamepad: GCGamepadType?) {
+    public convenience init?(gcGamepad: GCGamepad?) {
         guard let gcGamepad = gcGamepad else { return nil }
         self.init(gcGamepad: gcGamepad)
     }
