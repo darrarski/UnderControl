@@ -1,5 +1,7 @@
 import GameController
 
-public protocol GCGamepadType {}
+public protocol GCGamepadType: class {
+    var valueChangedHandler: GCGamepadValueChangedHandler? { get set }
+}
 
 extension GCGamepad: GCGamepadType {}
