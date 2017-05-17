@@ -27,6 +27,9 @@
 		31E9756A1ECCC6FB00506BDD /* DirectionPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E975691ECCC6FB00506BDD /* DirectionPad.swift */; };
 		31E9756C1ECCCAC600506BDD /* DirectionPadSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9756B1ECCCAC600506BDD /* DirectionPadSpec.swift */; };
 		31E9756E1ECCCB0800506BDD /* GCControllerDirectionPadDuble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9756D1ECCCB0800506BDD /* GCControllerDirectionPadDuble.swift */; };
+		31E975701ECCD27900506BDD /* GCControllerAxisInputDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9756F1ECCD27900506BDD /* GCControllerAxisInputDouble.swift */; };
+		31E975721ECCD2CE00506BDD /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E975711ECCD2CE00506BDD /* Axis.swift */; };
+		31E975741ECCD46000506BDD /* AxisSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E975731ECCD46000506BDD /* AxisSpec.swift */; };
 		31FA7A0B1EC90F7F000669FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA7A0A1EC90F7F000669FD /* AppDelegate.swift */; };
 		31FA7A0D1EC90F7F000669FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA7A0C1EC90F7F000669FD /* ViewController.swift */; };
 		31FA7A0F1EC90F7F000669FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31FA7A0E1EC90F7F000669FD /* Assets.xcassets */; };
@@ -92,6 +95,9 @@
 		31E975691ECCC6FB00506BDD /* DirectionPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionPad.swift; sourceTree = "<group>"; };
 		31E9756B1ECCCAC600506BDD /* DirectionPadSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionPadSpec.swift; sourceTree = "<group>"; };
 		31E9756D1ECCCB0800506BDD /* GCControllerDirectionPadDuble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCControllerDirectionPadDuble.swift; sourceTree = "<group>"; };
+		31E9756F1ECCD27900506BDD /* GCControllerAxisInputDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCControllerAxisInputDouble.swift; sourceTree = "<group>"; };
+		31E975711ECCD2CE00506BDD /* Axis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Axis.swift; sourceTree = "<group>"; };
+		31E975731ECCD46000506BDD /* AxisSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AxisSpec.swift; sourceTree = "<group>"; };
 		31FA7A071EC90F7F000669FD /* UnderControlApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnderControlApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FA7A0A1EC90F7F000669FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31FA7A0C1EC90F7F000669FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +153,7 @@
 		31C511881ECA5DA900361D53 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				31E975731ECCD46000506BDD /* AxisSpec.swift */,
 				31DECB501ECBB4EC000AEE0E /* ButtonSpec.swift */,
 				31C511921ECA6EF800361D53 /* ControllerSpec.swift */,
 				31C511891ECA5DC000361D53 /* ControllersSpec.swift */,
@@ -161,6 +168,7 @@
 		31C5118D1ECA612900361D53 /* Doubles */ = {
 			isa = PBXGroup;
 			children = (
+				31E9756F1ECCD27900506BDD /* GCControllerAxisInputDouble.swift */,
 				31DECB4C1ECBB190000AEE0E /* GCControllerButtonInputDouble.swift */,
 				31E9756D1ECCCB0800506BDD /* GCControllerDirectionPadDuble.swift */,
 				31C5118E1ECA613600361D53 /* GCControllerDouble.swift */,
@@ -241,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				31FA7A751EC9165A000669FD /* Supporting Files */,
+				31E975711ECCD2CE00506BDD /* Axis.swift */,
 				31DECB4E1ECBB2D1000AEE0E /* Button.swift */,
 				31C511901ECA6D1F00361D53 /* Controller.swift */,
 				31FA7A731EC91645000669FD /* Controllers.swift */,
@@ -634,6 +643,7 @@
 			files = (
 				31E9756A1ECCC6FB00506BDD /* DirectionPad.swift in Sources */,
 				31C511911ECA6D1F00361D53 /* Controller.swift in Sources */,
+				31E975721ECCD2CE00506BDD /* Axis.swift in Sources */,
 				31DECB471ECBA268000AEE0E /* Gamepad.swift in Sources */,
 				31DECB591ECBBCA1000AEE0E /* ExtendedGamepad.swift in Sources */,
 				31DECB531ECBBA37000AEE0E /* MicroGamepad.swift in Sources */,
@@ -658,6 +668,8 @@
 				31DECB491ECBA2A0000AEE0E /* GamepadSpec.swift in Sources */,
 				31C5118A1ECA5DC000361D53 /* ControllersSpec.swift in Sources */,
 				31DECB511ECBB4EC000AEE0E /* ButtonSpec.swift in Sources */,
+				31E975741ECCD46000506BDD /* AxisSpec.swift in Sources */,
+				31E975701ECCD27900506BDD /* GCControllerAxisInputDouble.swift in Sources */,
 				31DECB4D1ECBB190000AEE0E /* GCControllerButtonInputDouble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

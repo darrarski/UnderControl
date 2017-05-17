@@ -5,6 +5,8 @@ public class DirectionPad {
 
     public init(gcDirectionPad: GCControllerDirectionPad) {
         self.gcDirectionPad = gcDirectionPad
+        xAxis = Axis(gcAxis: gcDirectionPad.xAxis)
+        yAxis = Axis(gcAxis: gcDirectionPad.yAxis)
         up = Button(gcButton: gcDirectionPad.up)
         down = Button(gcButton: gcDirectionPad.down)
         left = Button(gcButton: gcDirectionPad.left)
@@ -14,6 +16,8 @@ public class DirectionPad {
 
     public let gcDirectionPad: GCControllerDirectionPad
 
+    public let xAxis: Axis
+    public let yAxis: Axis
     public let up: Button
     public let down: Button
     public let left: Button

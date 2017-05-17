@@ -20,6 +20,30 @@ class DirectionPadSpec: QuickSpec {
                 expect(sut.gcDirectionPad).to(be(gcDirectionPad))
             }
 
+            describe("xAxis") {
+                var axis: Axis!
+
+                beforeEach {
+                    axis = sut.xAxis
+                }
+
+                it("should have correct gcAxis") {
+                    expect(axis.gcAxis).to(be(gcDirectionPad.xAxis))
+                }
+            }
+
+            describe("yAxis") {
+                var axis: Axis!
+
+                beforeEach {
+                    axis = sut.yAxis
+                }
+
+                it("should have correct gcAxis") {
+                    expect(axis.gcAxis).to(be(gcDirectionPad.yAxis))
+                }
+            }
+
             describe("up") {
                 var button: Button!
 

@@ -3,6 +3,12 @@ import GameController
 
 class GCControllerDirectionPadDuble: GCControllerDirectionPad {
 
+    override var xAxis: GCControllerAxisInput { return _xAxis }
+    private var _xAxis = GCControllerAxisInputDouble()
+
+    override var yAxis: GCControllerAxisInput { return _yAxis }
+    private var _yAxis = GCControllerAxisInputDouble()
+
     override var up: GCControllerButtonInput { return _up }
     private var _up = GCControllerButtonInputDouble()
 
