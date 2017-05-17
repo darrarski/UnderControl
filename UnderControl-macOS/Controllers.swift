@@ -6,6 +6,7 @@ public class Controllers {
 
     public init(notificationCenter: NotificationCenter = NotificationCenter.default) {
         self.notificationCenter = notificationCenter
+        connected = GCController.controllers().map { Controller(gcController: $0) }
         setupControllerConnectionObservers()
     }
 
@@ -13,7 +14,7 @@ public class Controllers {
         removeControllerConnectionObservers()
     }
 
-    public private(set) var connected = [Controller]()
+    public private(set) var connected: [Controller]
 
     private let notificationCenter: NotificationCenter
 
