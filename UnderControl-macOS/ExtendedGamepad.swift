@@ -7,6 +7,7 @@ public class ExtendedGamepad {
         self.gcExtendedGamepad = gcExtendedGamepad
         leftShoulder = Button(gcButton: gcExtendedGamepad.leftShoulder)
         rightShoulder = Button(gcButton: gcExtendedGamepad.rightShoulder)
+        dpad = DirectionPad(gcDirectionPad: gcExtendedGamepad.dpad)
         buttonA = Button(gcButton: gcExtendedGamepad.buttonA)
         buttonB = Button(gcButton: gcExtendedGamepad.buttonB)
         buttonX = Button(gcButton: gcExtendedGamepad.buttonX)
@@ -20,6 +21,7 @@ public class ExtendedGamepad {
 
     public let leftShoulder: Button
     public let rightShoulder: Button
+    public let dpad: DirectionPad
     public let buttonA: Button
     public let buttonB: Button
     public let buttonX: Button

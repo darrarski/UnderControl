@@ -44,6 +44,18 @@ class ExtendedGamepadSpec: QuickSpec {
                 }
             }
 
+            describe("dpad") {
+                var dpad: DirectionPad!
+
+                beforeEach {
+                    dpad = sut.dpad
+                }
+
+                it("should have correct gcDirectionPad") {
+                    expect(dpad.gcDirectionPad).to(be(gcExtendedGamepad.dpad))
+                }
+            }
+
             describe("buttonA") {
                 var button: Button!
 

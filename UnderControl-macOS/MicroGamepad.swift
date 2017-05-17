@@ -5,6 +5,7 @@ public class MicroGamepad {
 
     public init(gcMicroGamepad: GCMicroGamepad) {
         self.gcMicroGamepad = gcMicroGamepad
+        dpad = DirectionPad(gcDirectionPad: gcMicroGamepad.dpad)
         buttonA = Button(gcButton: gcMicroGamepad.buttonA)
         buttonX = Button(gcButton: gcMicroGamepad.buttonX)
         setupHandlers()
@@ -12,6 +13,7 @@ public class MicroGamepad {
 
     public let gcMicroGamepad: GCMicroGamepad
 
+    public let dpad: DirectionPad
     public let buttonA: Button
     public let buttonX: Button
 

@@ -20,6 +20,18 @@ class MicroGamepadSpec: QuickSpec {
                 expect(sut.gcMicroGamepad).to(be(gcMicroGamepad))
             }
 
+            describe("dpad") {
+                var dpad: DirectionPad!
+
+                beforeEach {
+                    dpad = sut.dpad
+                }
+
+                it("should have correct gcDirectionPad") {
+                    expect(dpad.gcDirectionPad).to(be(gcMicroGamepad.dpad))
+                }
+            }
+
             describe("buttonA") {
                 var button: Button!
 
