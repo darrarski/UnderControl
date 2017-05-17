@@ -150,10 +150,10 @@
 				31DECB501ECBB4EC000AEE0E /* ButtonSpec.swift */,
 				31C511921ECA6EF800361D53 /* ControllerSpec.swift */,
 				31C511891ECA5DC000361D53 /* ControllersSpec.swift */,
+				31E9756B1ECCCAC600506BDD /* DirectionPadSpec.swift */,
 				31DECB5C1ECBBDA6000AEE0E /* ExtendedGamepadSpec.swift */,
 				31DECB481ECBA2A0000AEE0E /* GamepadSpec.swift */,
 				31DECB561ECBBAFE000AEE0E /* MicroGamepadSpec.swift */,
-				31E9756B1ECCCAC600506BDD /* DirectionPadSpec.swift */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -162,11 +162,11 @@
 			isa = PBXGroup;
 			children = (
 				31DECB4C1ECBB190000AEE0E /* GCControllerButtonInputDouble.swift */,
+				31E9756D1ECCCB0800506BDD /* GCControllerDirectionPadDuble.swift */,
 				31C5118E1ECA613600361D53 /* GCControllerDouble.swift */,
 				31DECB5A1ECBBD45000AEE0E /* GCExtendedGamepadDouble.swift */,
 				31DECB4A1ECBA2CF000AEE0E /* GCGamepadDouble.swift */,
 				31DECB541ECBBABF000AEE0E /* GCMicroGamepadDouble.swift */,
-				31E9756D1ECCCB0800506BDD /* GCControllerDirectionPadDuble.swift */,
 			);
 			path = Doubles;
 			sourceTree = "<group>";
@@ -244,10 +244,10 @@
 				31DECB4E1ECBB2D1000AEE0E /* Button.swift */,
 				31C511901ECA6D1F00361D53 /* Controller.swift */,
 				31FA7A731EC91645000669FD /* Controllers.swift */,
+				31E975691ECCC6FB00506BDD /* DirectionPad.swift */,
 				31DECB581ECBBCA1000AEE0E /* ExtendedGamepad.swift */,
 				31DECB461ECBA268000AEE0E /* Gamepad.swift */,
 				31DECB521ECBBA37000AEE0E /* MicroGamepad.swift */,
-				31E975691ECCC6FB00506BDD /* DirectionPad.swift */,
 			);
 			path = "UnderControl-macOS";
 			sourceTree = "<group>";
