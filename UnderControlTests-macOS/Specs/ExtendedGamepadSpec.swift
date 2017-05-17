@@ -104,6 +104,30 @@ class ExtendedGamepadSpec: QuickSpec {
                 }
             }
 
+            describe("leftThumbstick") {
+                var dpad: DirectionPad!
+
+                beforeEach {
+                    dpad = sut.leftThumbstick
+                }
+
+                it("should have correct gcDirectionPad") {
+                    expect(dpad.gcDirectionPad).to(be(gcExtendedGamepad.leftThumbstick))
+                }
+            }
+
+            describe("rightThumbstick") {
+                var dpad: DirectionPad!
+
+                beforeEach {
+                    dpad = sut.rightThumbstick
+                }
+
+                it("should have correct gcDirectionPad") {
+                    expect(dpad.gcDirectionPad).to(be(gcExtendedGamepad.rightThumbstick))
+                }
+            }
+
             describe("leftTrigger") {
                 var button: Button!
 

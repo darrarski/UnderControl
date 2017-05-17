@@ -12,6 +12,8 @@ public class ExtendedGamepad {
         buttonB = Button(gcButton: gcExtendedGamepad.buttonB)
         buttonX = Button(gcButton: gcExtendedGamepad.buttonX)
         buttonY = Button(gcButton: gcExtendedGamepad.buttonY)
+        leftThumbstick = DirectionPad(gcDirectionPad: gcExtendedGamepad.leftThumbstick)
+        rightThumbstick = DirectionPad(gcDirectionPad: gcExtendedGamepad.rightThumbstick)
         leftTrigger = Button(gcButton: gcExtendedGamepad.leftTrigger)
         rightTrigger = Button(gcButton: gcExtendedGamepad.rightTrigger)
         setupHandlers()
@@ -26,6 +28,8 @@ public class ExtendedGamepad {
     public let buttonB: Button
     public let buttonX: Button
     public let buttonY: Button
+    public let leftThumbstick: DirectionPad
+    public let rightThumbstick: DirectionPad
     public let leftTrigger: Button
     public let rightTrigger: Button
 

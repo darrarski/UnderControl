@@ -30,6 +30,12 @@ class GCExtendedGamepadDouble: GCExtendedGamepad {
     override var buttonY: GCControllerButtonInput { return _buttonY }
     private var _buttonY = GCControllerButtonInputDouble()
 
+    override var leftThumbstick: GCControllerDirectionPad { return _leftThumbstick }
+    private var _leftThumbstick = GCControllerDirectionPadDouble()
+
+    override var rightThumbstick: GCControllerDirectionPad { return _rightThumbstick }
+    private var _rightThumbstick = GCControllerDirectionPadDouble()
+
     override var leftTrigger: GCControllerButtonInput { return _leftTrigger }
     private var _leftTrigger = GCControllerButtonInputDouble()
 
