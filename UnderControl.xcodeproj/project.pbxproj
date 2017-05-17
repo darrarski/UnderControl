@@ -150,6 +150,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		316035E21ECD005F0008FA1A /* UnderControl */ = {
+			isa = PBXGroup;
+			children = (
+				31E975711ECCD2CE00506BDD /* Axis.swift */,
+				31DECB4E1ECBB2D1000AEE0E /* Button.swift */,
+				31C511901ECA6D1F00361D53 /* Controller.swift */,
+				31FA7A731EC91645000669FD /* Controllers.swift */,
+				31E975691ECCC6FB00506BDD /* DirectionPad.swift */,
+				31DECB581ECBBCA1000AEE0E /* ExtendedGamepad.swift */,
+				31DECB461ECBA268000AEE0E /* Gamepad.swift */,
+				31DECB521ECBBA37000AEE0E /* MicroGamepad.swift */,
+			);
+			path = UnderControl;
+			sourceTree = "<group>";
+		};
+		316035E31ECD00870008FA1A /* UnderControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				31C5118D1ECA612900361D53 /* Doubles */,
+				31C511881ECA5DA900361D53 /* Specs */,
+			);
+			path = UnderControlTests;
+			sourceTree = "<group>";
+		};
 		31C511881ECA5DA900361D53 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,8 +209,10 @@
 				F04C94EDE3DAF0182184FEBD /* Frameworks */,
 				EF5B194FC2808FB46F3B21E2 /* Pods */,
 				31FA7A081EC90F7F000669FD /* Products */,
+				316035E21ECD005F0008FA1A /* UnderControl */,
 				31FA7A551EC91523000669FD /* UnderControl-macOS */,
 				31FA7A091EC90F7F000669FD /* UnderControlApp-macOS */,
+				316035E31ECD00870008FA1A /* UnderControlTests */,
 				31FA7A621EC91524000669FD /* UnderControlTests-macOS */,
 			);
 			sourceTree = "<group>";
@@ -249,14 +275,6 @@
 			isa = PBXGroup;
 			children = (
 				31FA7A751EC9165A000669FD /* Supporting Files */,
-				31E975711ECCD2CE00506BDD /* Axis.swift */,
-				31DECB4E1ECBB2D1000AEE0E /* Button.swift */,
-				31C511901ECA6D1F00361D53 /* Controller.swift */,
-				31FA7A731EC91645000669FD /* Controllers.swift */,
-				31E975691ECCC6FB00506BDD /* DirectionPad.swift */,
-				31DECB581ECBBCA1000AEE0E /* ExtendedGamepad.swift */,
-				31DECB461ECBA268000AEE0E /* Gamepad.swift */,
-				31DECB521ECBBA37000AEE0E /* MicroGamepad.swift */,
 			);
 			path = "UnderControl-macOS";
 			sourceTree = "<group>";
@@ -264,8 +282,6 @@
 		31FA7A621EC91524000669FD /* UnderControlTests-macOS */ = {
 			isa = PBXGroup;
 			children = (
-				31C5118D1ECA612900361D53 /* Doubles */,
-				31C511881ECA5DA900361D53 /* Specs */,
 				31FA7A721EC915E3000669FD /* Supporting Files */,
 			);
 			path = "UnderControlTests-macOS";
@@ -490,7 +506,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd UnderControl-macOS; ${PODS_ROOT}/SwiftLint/swiftlint";
+			shellScript = "cd UnderControl; ${PODS_ROOT}/SwiftLint/swiftlint";
 		};
 		317672A41EC9216000A8DECE /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -504,7 +520,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd UnderControlTests-macOS; ${PODS_ROOT}/SwiftLint/swiftlint";
+			shellScript = "cd UnderControlTests; ${PODS_ROOT}/SwiftLint/swiftlint";
 		};
 		31FA7A1D1EC9127B000669FD /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
