@@ -7,12 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02E0AD8CE2A9E1209E0075F6 /* Pods_UnderControl_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB52AA0E5F20767CD9449AB /* Pods_UnderControl_iOS.framework */; };
+		311DFA551ECD0338002F02AF /* UnderControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311DFA4C1ECD0338002F02AF /* UnderControl.framework */; };
+		311DFA5E1ECD0338002F02AF /* UnderControl-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 311DFA4E1ECD0338002F02AF /* UnderControl-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		311DFA611ECD0338002F02AF /* UnderControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 311DFA4C1ECD0338002F02AF /* UnderControl.framework */; };
+		311DFA621ECD0338002F02AF /* UnderControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 311DFA4C1ECD0338002F02AF /* UnderControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		316035EB1ECD01B10008FA1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316035EA1ECD01B10008FA1A /* AppDelegate.swift */; };
 		316035ED1ECD01B10008FA1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 316035EC1ECD01B10008FA1A /* ViewController.swift */; };
 		316035F01ECD01B10008FA1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316035EE1ECD01B10008FA1A /* Main.storyboard */; };
 		316035F21ECD01B10008FA1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316035F11ECD01B10008FA1A /* Assets.xcassets */; };
 		316035F51ECD01B10008FA1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316035F31ECD01B10008FA1A /* LaunchScreen.storyboard */; };
 		3171AE841EC91FF5005003BE /* UnderControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FA7A541EC91523000669FD /* UnderControl.framework */; };
+		31BE5F171ECD04E700CA90E2 /* Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E975711ECCD2CE00506BDD /* Axis.swift */; };
+		31BE5F181ECD04E700CA90E2 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB4E1ECBB2D1000AEE0E /* Button.swift */; };
+		31BE5F191ECD04E700CA90E2 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C511901ECA6D1F00361D53 /* Controller.swift */; };
+		31BE5F1A1ECD04E700CA90E2 /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FA7A731EC91645000669FD /* Controllers.swift */; };
+		31BE5F1B1ECD04E700CA90E2 /* DirectionPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E975691ECCC6FB00506BDD /* DirectionPad.swift */; };
+		31BE5F1C1ECD04E700CA90E2 /* ExtendedGamepad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB581ECBBCA1000AEE0E /* ExtendedGamepad.swift */; };
+		31BE5F1D1ECD04E700CA90E2 /* Gamepad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB461ECBA268000AEE0E /* Gamepad.swift */; };
+		31BE5F1E1ECD04E700CA90E2 /* MicroGamepad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB521ECBBA37000AEE0E /* MicroGamepad.swift */; };
+		31BE5F1F1ECD04F000CA90E2 /* GCControllerAxisInputDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9756F1ECCD27900506BDD /* GCControllerAxisInputDouble.swift */; };
+		31BE5F201ECD04F000CA90E2 /* GCControllerButtonInputDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB4C1ECBB190000AEE0E /* GCControllerButtonInputDouble.swift */; };
+		31BE5F211ECD04F000CA90E2 /* GCControllerDirectionPadDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9756D1ECCCB0800506BDD /* GCControllerDirectionPadDouble.swift */; };
+		31BE5F221ECD04F000CA90E2 /* GCControllerDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C5118E1ECA613600361D53 /* GCControllerDouble.swift */; };
+		31BE5F231ECD04F000CA90E2 /* GCExtendedGamepadDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB5A1ECBBD45000AEE0E /* GCExtendedGamepadDouble.swift */; };
+		31BE5F241ECD04F000CA90E2 /* GCGamepadDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB4A1ECBA2CF000AEE0E /* GCGamepadDouble.swift */; };
+		31BE5F251ECD04F000CA90E2 /* GCMicroGamepadDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB541ECBBABF000AEE0E /* GCMicroGamepadDouble.swift */; };
+		31BE5F261ECD04F500CA90E2 /* AxisSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E975731ECCD46000506BDD /* AxisSpec.swift */; };
+		31BE5F271ECD04F500CA90E2 /* ButtonSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB501ECBB4EC000AEE0E /* ButtonSpec.swift */; };
+		31BE5F281ECD04F500CA90E2 /* ControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C511921ECA6EF800361D53 /* ControllerSpec.swift */; };
+		31BE5F291ECD04F500CA90E2 /* ControllersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C511891ECA5DC000361D53 /* ControllersSpec.swift */; };
+		31BE5F2A1ECD04F500CA90E2 /* DirectionPadSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9756B1ECCCAC600506BDD /* DirectionPadSpec.swift */; };
+		31BE5F2B1ECD04F500CA90E2 /* ExtendedGamepadSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB5C1ECBBDA6000AEE0E /* ExtendedGamepadSpec.swift */; };
+		31BE5F2C1ECD04F500CA90E2 /* GamepadSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB481ECBA2A0000AEE0E /* GamepadSpec.swift */; };
+		31BE5F2D1ECD04F500CA90E2 /* MicroGamepadSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB561ECBBAFE000AEE0E /* MicroGamepadSpec.swift */; };
 		31C5118A1ECA5DC000361D53 /* ControllersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C511891ECA5DC000361D53 /* ControllersSpec.swift */; };
 		31C5118F1ECA613600361D53 /* GCControllerDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C5118E1ECA613600361D53 /* GCControllerDouble.swift */; };
 		31C511911ECA6D1F00361D53 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C511901ECA6D1F00361D53 /* Controller.swift */; };
@@ -44,12 +72,34 @@
 		31FA7A7A1EC918F1000669FD /* UnderControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FA7A541EC91523000669FD /* UnderControl.framework */; };
 		31FA7A7B1EC91902000669FD /* UnderControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31FA7A541EC91523000669FD /* UnderControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		550352F71153F24A7C265240 /* Pods_UnderControlApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 450C8EA69876A9C1BE43CCF0 /* Pods_UnderControlApp_iOS.framework */; };
+		5905BCCF6BD5902A23D74E37 /* Pods_UnderControlTests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DFA89BF6AA93109EB65612 /* Pods_UnderControlTests_iOS.framework */; };
 		E0D45B01AFB7CCD4D68117EB /* Pods_UnderControl_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924B5D4176F77AF7AE01EF01 /* Pods_UnderControl_macOS.framework */; };
 		EE52A2AE64A81F43A43FE73D /* Pods_UnderControlApp_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24ADD3D821F379946030336E /* Pods_UnderControlApp_macOS.framework */; };
 		FA219A47E333DFB553434A08 /* Pods_UnderControlTests_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EEE02DFD5871F48718571D /* Pods_UnderControlTests_macOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		311DFA561ECD0338002F02AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31FA79FF1EC90F7F000669FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 311DFA4B1ECD0338002F02AF;
+			remoteInfo = "UnderControl-iOS";
+		};
+		311DFA581ECD0338002F02AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31FA79FF1EC90F7F000669FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 316035E71ECD01B10008FA1A;
+			remoteInfo = "UnderControlApp-iOS";
+		};
+		311DFA5F1ECD0338002F02AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31FA79FF1EC90F7F000669FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 311DFA4B1ECD0338002F02AF;
+			remoteInfo = "UnderControl-iOS";
+		};
 		3171AE821EC91FE7005003BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 31FA79FF1EC90F7F000669FD /* Project object */;
@@ -67,6 +117,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		311DFA661ECD0338002F02AF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				311DFA621ECD0338002F02AF /* UnderControl.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31FA7A701EC91524000669FD /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,8 +143,14 @@
 
 /* Begin PBXFileReference section */
 		025F8547C9C9D71CDB1D4F59 /* Pods-UnderControlApp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderControlApp-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnderControlApp-iOS/Pods-UnderControlApp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		10DFA89BF6AA93109EB65612 /* Pods_UnderControlTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderControlTests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24ADD3D821F379946030336E /* Pods_UnderControlApp_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderControlApp_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		316035E81ECD01B10008FA1A /* UnderControlApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UnderControlApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		311DFA4C1ECD0338002F02AF /* UnderControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UnderControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		311DFA4E1ECD0338002F02AF /* UnderControl-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnderControl-iOS.h"; sourceTree = "<group>"; };
+		311DFA4F1ECD0338002F02AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		311DFA541ECD0338002F02AF /* UnderControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnderControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		311DFA5D1ECD0338002F02AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		316035E81ECD01B10008FA1A /* UnderControlApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnderControlApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		316035EA1ECD01B10008FA1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		316035EC1ECD01B10008FA1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		316035EF1ECD01B10008FA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,22 +193,45 @@
 		31FA7A731EC91645000669FD /* Controllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllers.swift; sourceTree = "<group>"; };
 		3CD601D38A8A55323D02EFE0 /* Pods-UnderControlApp-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderControlApp-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnderControlApp-macOS/Pods-UnderControlApp-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		450C8EA69876A9C1BE43CCF0 /* Pods_UnderControlApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderControlApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		460274B25DFF4EB2DD1CAA35 /* Pods-UnderControl-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderControl-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnderControl-iOS/Pods-UnderControl-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		527DDE7CBEC6B4BD182F41B2 /* Pods-UnderControlApp-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderControlApp-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnderControlApp-macOS/Pods-UnderControlApp-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		643750DCEDEE32DA7824D9DE /* Pods-UnderControl-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderControl-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnderControl-iOS/Pods-UnderControl-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		73EC6F513A3C082EEBA2917A /* Pods-UnderControlTests-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderControlTests-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnderControlTests-macOS/Pods-UnderControlTests-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		8B5E1060F4F98445690152F5 /* Pods-UnderControl-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderControl-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnderControl-macOS/Pods-UnderControl-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		924B5D4176F77AF7AE01EF01 /* Pods_UnderControl_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderControl_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA37E675956910B28839DEC6 /* Pods-UnderControlTests-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderControlTests-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnderControlTests-macOS/Pods-UnderControlTests-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B2B7056BFB9A0320D7D40644 /* Pods-UnderControl-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderControl-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnderControl-macOS/Pods-UnderControl-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		C4EEE02DFD5871F48718571D /* Pods_UnderControlTests_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderControlTests_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C1B57C5D50163B34E976A1 /* Pods-UnderControlTests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderControlTests-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnderControlTests-iOS/Pods-UnderControlTests-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		DAB52AA0E5F20767CD9449AB /* Pods_UnderControl_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderControl_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F5C235A0E519BD7299D598 /* Pods-UnderControlTests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderControlTests-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnderControlTests-iOS/Pods-UnderControlTests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		F8C6A65EBBCC8A695C5C46C9 /* Pods-UnderControlApp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderControlApp-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnderControlApp-iOS/Pods-UnderControlApp-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		311DFA481ECD0338002F02AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E0AD8CE2A9E1209E0075F6 /* Pods_UnderControl_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311DFA511ECD0338002F02AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311DFA551ECD0338002F02AF /* UnderControl.framework in Frameworks */,
+				5905BCCF6BD5902A23D74E37 /* Pods_UnderControlTests_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		316035E51ECD01B10008FA1A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				550352F71153F24A7C265240 /* Pods_UnderControlApp_iOS.framework in Frameworks */,
+				311DFA611ECD0338002F02AF /* UnderControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +264,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		311DFA4D1ECD0338002F02AF /* UnderControl-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				311DFA4F1ECD0338002F02AF /* Info.plist */,
+				311DFA4E1ECD0338002F02AF /* UnderControl-iOS.h */,
+			);
+			path = "UnderControl-iOS";
+			sourceTree = "<group>";
+		};
+		311DFA5A1ECD0338002F02AF /* UnderControlTests-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				311DFA6A1ECD03CD002F02AF /* Supporting Files */,
+			);
+			path = "UnderControlTests-iOS";
+			sourceTree = "<group>";
+		};
+		311DFA6A1ECD03CD002F02AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				311DFA5D1ECD0338002F02AF /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		316035E21ECD005F0008FA1A /* UnderControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,10 +394,12 @@
 				EF5B194FC2808FB46F3B21E2 /* Pods */,
 				31FA7A081EC90F7F000669FD /* Products */,
 				316035E21ECD005F0008FA1A /* UnderControl */,
+				311DFA4D1ECD0338002F02AF /* UnderControl-iOS */,
 				31FA7A551EC91523000669FD /* UnderControl-macOS */,
 				316035E91ECD01B10008FA1A /* UnderControlApp-iOS */,
 				31FA7A091EC90F7F000669FD /* UnderControlApp-macOS */,
 				316035E31ECD00870008FA1A /* UnderControlTests */,
+				311DFA5A1ECD0338002F02AF /* UnderControlTests-iOS */,
 				31FA7A621EC91524000669FD /* UnderControlTests-macOS */,
 			);
 			sourceTree = "<group>";
@@ -293,7 +410,9 @@
 				31FA7A071EC90F7F000669FD /* UnderControlApp.app */,
 				31FA7A541EC91523000669FD /* UnderControl.framework */,
 				31FA7A5C1EC91524000669FD /* UnderControlTests.xctest */,
-				316035E81ECD01B10008FA1A /* UnderControlApp-iOS.app */,
+				316035E81ECD01B10008FA1A /* UnderControlApp.app */,
+				311DFA4C1ECD0338002F02AF /* UnderControl.framework */,
+				311DFA541ECD0338002F02AF /* UnderControlTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -386,6 +505,10 @@
 				73EC6F513A3C082EEBA2917A /* Pods-UnderControlTests-macOS.release.xcconfig */,
 				025F8547C9C9D71CDB1D4F59 /* Pods-UnderControlApp-iOS.debug.xcconfig */,
 				F8C6A65EBBCC8A695C5C46C9 /* Pods-UnderControlApp-iOS.release.xcconfig */,
+				643750DCEDEE32DA7824D9DE /* Pods-UnderControl-iOS.debug.xcconfig */,
+				460274B25DFF4EB2DD1CAA35 /* Pods-UnderControl-iOS.release.xcconfig */,
+				F1F5C235A0E519BD7299D598 /* Pods-UnderControlTests-iOS.debug.xcconfig */,
+				C8C1B57C5D50163B34E976A1 /* Pods-UnderControlTests-iOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -397,6 +520,8 @@
 				924B5D4176F77AF7AE01EF01 /* Pods_UnderControl_macOS.framework */,
 				C4EEE02DFD5871F48718571D /* Pods_UnderControlTests_macOS.framework */,
 				450C8EA69876A9C1BE43CCF0 /* Pods_UnderControlApp_iOS.framework */,
+				DAB52AA0E5F20767CD9449AB /* Pods_UnderControl_iOS.framework */,
+				10DFA89BF6AA93109EB65612 /* Pods_UnderControlTests_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -404,6 +529,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		311DFA491ECD0338002F02AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311DFA5E1ECD0338002F02AF /* UnderControl-iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		31FA7A511EC91523000669FD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,6 +548,50 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		311DFA4B1ECD0338002F02AF /* UnderControl-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311DFA631ECD0338002F02AF /* Build configuration list for PBXNativeTarget "UnderControl-iOS" */;
+			buildPhases = (
+				4748E3E8448658DDB065C0B6 /* [CP] Check Pods Manifest.lock */,
+				31BE5F2E1ECD065300CA90E2 /* SwiftLint */,
+				311DFA471ECD0338002F02AF /* Sources */,
+				311DFA481ECD0338002F02AF /* Frameworks */,
+				311DFA491ECD0338002F02AF /* Headers */,
+				311DFA4A1ECD0338002F02AF /* Resources */,
+				9773423998B95E32EAF717AE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UnderControl-iOS";
+			productName = "UnderControl-iOS";
+			productReference = 311DFA4C1ECD0338002F02AF /* UnderControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		311DFA531ECD0338002F02AF /* UnderControlTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 311DFA671ECD0338002F02AF /* Build configuration list for PBXNativeTarget "UnderControlTests-iOS" */;
+			buildPhases = (
+				1F52A4FE8372AB7D17595861 /* [CP] Check Pods Manifest.lock */,
+				31BE5F2F1ECD067400CA90E2 /* SwiftLint */,
+				311DFA501ECD0338002F02AF /* Sources */,
+				311DFA511ECD0338002F02AF /* Frameworks */,
+				311DFA521ECD0338002F02AF /* Resources */,
+				AE5514300F125EDC36F6B705 /* [CP] Embed Pods Frameworks */,
+				C41DF301FF83000A1B526D27 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				311DFA571ECD0338002F02AF /* PBXTargetDependency */,
+				311DFA591ECD0338002F02AF /* PBXTargetDependency */,
+			);
+			name = "UnderControlTests-iOS";
+			productName = "UnderControl-iOSTests";
+			productReference = 311DFA541ECD0338002F02AF /* UnderControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		316035E71ECD01B10008FA1A /* UnderControlApp-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 316035F71ECD01B10008FA1A /* Build configuration list for PBXNativeTarget "UnderControlApp-iOS" */;
@@ -426,14 +603,16 @@
 				316035E61ECD01B10008FA1A /* Resources */,
 				82D372B0F12BA1E404B93A27 /* [CP] Embed Pods Frameworks */,
 				521C48CF6D3533A84E9EC0FB /* [CP] Copy Pods Resources */,
+				311DFA661ECD0338002F02AF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				311DFA601ECD0338002F02AF /* PBXTargetDependency */,
 			);
 			name = "UnderControlApp-iOS";
 			productName = "UnderControlApp-iOS";
-			productReference = 316035E81ECD01B10008FA1A /* UnderControlApp-iOS.app */;
+			productReference = 316035E81ECD01B10008FA1A /* UnderControlApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		31FA7A061EC90F7F000669FD /* UnderControlApp-macOS */ = {
@@ -512,6 +691,14 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Darrarski;
 				TargetAttributes = {
+					311DFA4B1ECD0338002F02AF = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Manual;
+					};
+					311DFA531ECD0338002F02AF = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Manual;
+					};
 					316035E71ECD01B10008FA1A = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Manual;
@@ -544,15 +731,31 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				311DFA4B1ECD0338002F02AF /* UnderControl-iOS */,
 				31FA7A531EC91523000669FD /* UnderControl-macOS */,
-				31FA7A061EC90F7F000669FD /* UnderControlApp-macOS */,
-				31FA7A5B1EC91524000669FD /* UnderControlTests-macOS */,
 				316035E71ECD01B10008FA1A /* UnderControlApp-iOS */,
+				31FA7A061EC90F7F000669FD /* UnderControlApp-macOS */,
+				311DFA531ECD0338002F02AF /* UnderControlTests-iOS */,
+				31FA7A5B1EC91524000669FD /* UnderControlTests-macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		311DFA4A1ECD0338002F02AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311DFA521ECD0338002F02AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		316035E61ECD01B10008FA1A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -590,6 +793,21 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		198A755A6A3F0FAE142CB1DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1F52A4FE8372AB7D17595861 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -646,6 +864,34 @@
 			shellPath = /bin/sh;
 			shellScript = "cd UnderControlTests; ${PODS_ROOT}/SwiftLint/swiftlint";
 		};
+		31BE5F2E1ECD065300CA90E2 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd UnderControl; ${PODS_ROOT}/SwiftLint/swiftlint";
+		};
+		31BE5F2F1ECD067400CA90E2 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd UnderControlTests; ${PODS_ROOT}/SwiftLint/swiftlint";
+		};
 		31FA7A1D1EC9127B000669FD /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -659,6 +905,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cd UnderControlApp-macOS; ${PODS_ROOT}/SwiftLint/swiftlint";
+		};
+		4748E3E8448658DDB065C0B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 		521C48CF6D3533A84E9EC0FB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -718,6 +979,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnderControlApp-iOS/Pods-UnderControlApp-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9773423998B95E32EAF717AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnderControl-iOS/Pods-UnderControl-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		978E2889D9143E0643D07307 /* [CP] Embed Pods Frameworks */ = {
@@ -780,6 +1056,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		AE5514300F125EDC36F6B705 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnderControlTests-iOS/Pods-UnderControlTests-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C41DF301FF83000A1B526D27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnderControlTests-iOS/Pods-UnderControlTests-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D7E365EED78AA744D03811D8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -813,6 +1119,43 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		311DFA471ECD0338002F02AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31BE5F191ECD04E700CA90E2 /* Controller.swift in Sources */,
+				31BE5F1B1ECD04E700CA90E2 /* DirectionPad.swift in Sources */,
+				31BE5F1C1ECD04E700CA90E2 /* ExtendedGamepad.swift in Sources */,
+				31BE5F171ECD04E700CA90E2 /* Axis.swift in Sources */,
+				31BE5F181ECD04E700CA90E2 /* Button.swift in Sources */,
+				31BE5F1D1ECD04E700CA90E2 /* Gamepad.swift in Sources */,
+				31BE5F1E1ECD04E700CA90E2 /* MicroGamepad.swift in Sources */,
+				31BE5F1A1ECD04E700CA90E2 /* Controllers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		311DFA501ECD0338002F02AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31BE5F221ECD04F000CA90E2 /* GCControllerDouble.swift in Sources */,
+				31BE5F2B1ECD04F500CA90E2 /* ExtendedGamepadSpec.swift in Sources */,
+				31BE5F261ECD04F500CA90E2 /* AxisSpec.swift in Sources */,
+				31BE5F2A1ECD04F500CA90E2 /* DirectionPadSpec.swift in Sources */,
+				31BE5F271ECD04F500CA90E2 /* ButtonSpec.swift in Sources */,
+				31BE5F231ECD04F000CA90E2 /* GCExtendedGamepadDouble.swift in Sources */,
+				31BE5F2D1ECD04F500CA90E2 /* MicroGamepadSpec.swift in Sources */,
+				31BE5F251ECD04F000CA90E2 /* GCMicroGamepadDouble.swift in Sources */,
+				31BE5F241ECD04F000CA90E2 /* GCGamepadDouble.swift in Sources */,
+				31BE5F2C1ECD04F500CA90E2 /* GamepadSpec.swift in Sources */,
+				31BE5F1F1ECD04F000CA90E2 /* GCControllerAxisInputDouble.swift in Sources */,
+				31BE5F201ECD04F000CA90E2 /* GCControllerButtonInputDouble.swift in Sources */,
+				31BE5F281ECD04F500CA90E2 /* ControllerSpec.swift in Sources */,
+				31BE5F211ECD04F000CA90E2 /* GCControllerDirectionPadDouble.swift in Sources */,
+				31BE5F291ECD04F500CA90E2 /* ControllersSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		316035E41ECD01B10008FA1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -871,6 +1214,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		311DFA571ECD0338002F02AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 311DFA4B1ECD0338002F02AF /* UnderControl-iOS */;
+			targetProxy = 311DFA561ECD0338002F02AF /* PBXContainerItemProxy */;
+		};
+		311DFA591ECD0338002F02AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 316035E71ECD01B10008FA1A /* UnderControlApp-iOS */;
+			targetProxy = 311DFA581ECD0338002F02AF /* PBXContainerItemProxy */;
+		};
+		311DFA601ECD0338002F02AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 311DFA4B1ECD0338002F02AF /* UnderControl-iOS */;
+			targetProxy = 311DFA5F1ECD0338002F02AF /* PBXContainerItemProxy */;
+		};
 		3171AE831EC91FE7005003BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 31FA7A531EC91523000669FD /* UnderControl-macOS */;
@@ -914,6 +1272,98 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		311DFA641ECD0338002F02AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 643750DCEDEE32DA7824D9DE /* Pods-UnderControl-iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "UnderControl-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.darrarski.UnderControl-iOS";
+				PRODUCT_NAME = UnderControl;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		311DFA651ECD0338002F02AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460274B25DFF4EB2DD1CAA35 /* Pods-UnderControl-iOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "UnderControl-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.darrarski.UnderControl-iOS";
+				PRODUCT_NAME = UnderControl;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		311DFA681ECD0338002F02AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1F5C235A0E519BD7299D598 /* Pods-UnderControlTests-iOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "UnderControlTests-iOS/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.darrarski.UnderControl-iOSTests";
+				PRODUCT_NAME = UnderControlTests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		311DFA691ECD0338002F02AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C1B57C5D50163B34E976A1 /* Pods-UnderControlTests-iOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "UnderControlTests-iOS/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.darrarski.UnderControl-iOSTests";
+				PRODUCT_NAME = UnderControlTests;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		316035F81ECD01B10008FA1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 025F8547C9C9D71CDB1D4F59 /* Pods-UnderControlApp-iOS.debug.xcconfig */;
@@ -925,7 +1375,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.darrarski.UnderControlApp-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UnderControlApp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
@@ -944,7 +1394,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.darrarski.UnderControlApp-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UnderControlApp;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 3.0;
@@ -1157,6 +1607,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		311DFA631ECD0338002F02AF /* Build configuration list for PBXNativeTarget "UnderControl-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311DFA641ECD0338002F02AF /* Debug */,
+				311DFA651ECD0338002F02AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		311DFA671ECD0338002F02AF /* Build configuration list for PBXNativeTarget "UnderControlTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				311DFA681ECD0338002F02AF /* Debug */,
+				311DFA691ECD0338002F02AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		316035F71ECD01B10008FA1A /* Build configuration list for PBXNativeTarget "UnderControlApp-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
