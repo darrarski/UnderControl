@@ -9,10 +9,10 @@ class DirectionPadSpec: QuickSpec {
     override func spec() {
         describe("DirectionPad") {
             var sut: DirectionPad!
-            var gcDirectionPad: GCControllerDirectionPad!
+            var gcDirectionPad: GCControllerDirectionPadDouble!
 
             beforeEach {
-                gcDirectionPad = GCControllerDirectionPadDuble()
+                gcDirectionPad = GCControllerDirectionPadDouble()
                 sut = DirectionPad(gcDirectionPad: gcDirectionPad)
             }
 

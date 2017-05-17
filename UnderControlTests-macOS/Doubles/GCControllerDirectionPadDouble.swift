@@ -1,7 +1,7 @@
 import GameController
 @testable import UnderControl
 
-class GCControllerDirectionPadDuble: GCControllerDirectionPad {
+class GCControllerDirectionPadDouble: GCControllerDirectionPad {
 
     override var xAxis: GCControllerAxisInput { return _xAxis }
     private var _xAxis = GCControllerAxisInputDouble()
