@@ -22,3 +22,9 @@ target 'UnderControlTests-macOS' do
 	pod 'Nimble', '~> 7.0'
 	pod 'RxTest', '~> 3.4'
 end
+
+target 'UnderControlApp-iOS' do
+  platform :ios, '10.3'
+  pod 'SwiftLint', '~> 0.18'
+	pod 'RxSwift', '~> 3.4'
+end
