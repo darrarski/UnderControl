@@ -13,6 +13,8 @@ public class Controllers {
         removeControllerConnectionObservers()
     }
 
+    public private(set) var connected = [Controller]()
+
     private let notificationCenter: NotificationCenter
 
     // MARK: Controller connection observing
@@ -35,21 +37,13 @@ public class Controllers {
             forName: Notification.Name.GCControllerDidConnect,
             object: nil,
             queue: OperationQueue.main,
-            using: { [weak self] in
-                guard let gcController = $0.object as? GCController else { return }
-                let controller = Controller(gcController: gcController)
-                self?.controllerDidConnectSubject.onNext(controller)
-            }
+            using: { [weak self] in self?.gcControllerDidConnect(notification: $0) }
         )
         controllerDidDisconnectObserver = notificationCenter.addObserver(
             forName: Notification.Name.GCControllerDidDisconnect,
             object: nil,
             queue: OperationQueue.main,
-            using: { [weak self] in
-                guard let gcController = $0.object as? GCController else { return }
-                let controller = Controller(gcController: gcController)
-                self?.controllerDidDisconnectSubject.onNext(controller)
-            }
+            using: { [weak self] in self?.gcControllerDidDisconnect(notification: $0) }
         )
     }
 
@@ -58,6 +52,23 @@ public class Controllers {
         observers.forEach { notificationCenter.removeObserver($0) }
         controllerDidConnectObserver = nil
         controllerDidDisconnectObserver = nil
+    }
+
+    private func gcControllerDidConnect(notification: Notification) {
+        guard let gcController = notification.object as? GCController else { return }
+        guard connected.first(where: { $0.gcController == gcController }) == nil else { return }
+        let controller = Controller(gcController: gcController)
+        connected.append(controller)
+        controllerDidConnectSubject.onNext(controller)
+    }
+
+    private func gcControllerDidDisconnect(notification: Notification) {
+        guard let gcController = notification.object as? GCController else { return }
+        guard let (index, controller) = connected.enumerated().first(where: { $1.gcController == gcController }) else {
+            return
+        }
+        connected.remove(at: index)
+        controllerDidDisconnectSubject.onNext(controller)
     }
 
 }
