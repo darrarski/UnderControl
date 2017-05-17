@@ -15,4 +15,10 @@ class GCControllerDirectionPadDuble: GCControllerDirectionPad {
     override var right: GCControllerButtonInput { return _right }
     private var _right = GCControllerButtonInputDouble()
 
+    override var valueChangedHandler: GCControllerDirectionPadValueChangedHandler? {
+        get { return _valueChangedHandler }
+        set { _valueChangedHandler = newValue }
+    }
+    private var _valueChangedHandler: GCControllerDirectionPadValueChangedHandler?
+
 }
