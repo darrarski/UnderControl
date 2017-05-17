@@ -44,6 +44,29 @@ class ControllersSpec: QuickSpec {
                     it("should produce correct event") {
                         expect(observer.events.first?.value.element?.gcController).to(be(gcController))
                     }
+
+                    context("did disconnect") {
+                        var scheduler: TestScheduler!
+                        var observer: TestableObserver<Controller>!
+
+                        beforeEach {
+                            scheduler = TestScheduler(initialClock: 0)
+                            observer = scheduler.createObserver(Controller.self)
+                            _ = sut.controllerDidDisconnect.subscribe(observer)
+                            notificationCenter.post(
+                                name: Notification.Name.GCControllerDidDisconnect,
+                                object: gcController
+                            )
+                        }
+
+                        it("should produce one event") {
+                            expect(observer.events.count).to(equal(1))
+                        }
+
+                        it("should produce correct event") {
+                            expect(observer.events.first?.value.element?.gcController).to(be(gcController))
+                        }
+                    }
                 }
 
                 context("did disconnect") {
@@ -56,6 +79,29 @@ class ControllersSpec: QuickSpec {
                         _ = sut.controllerDidDisconnect.subscribe(observer)
                         notificationCenter.post(
                             name: Notification.Name.GCControllerDidDisconnect,
+                            object: gcController
+                        )
+                    }
+
+                    it("should produce no events") {
+                        expect(observer.events).to(beEmpty())
+                    }
+                }
+
+                context("did connect twice") {
+                    var scheduler: TestScheduler!
+                    var observer: TestableObserver<Controller>!
+
+                    beforeEach {
+                        scheduler = TestScheduler(initialClock: 0)
+                        observer = scheduler.createObserver(Controller.self)
+                        _ = sut.controllerDidConnect.subscribe(observer)
+                        notificationCenter.post(
+                            name: Notification.Name.GCControllerDidConnect,
+                            object: gcController
+                        )
+                        notificationCenter.post(
+                            name: Notification.Name.GCControllerDidConnect,
                             object: gcController
                         )
                     }
