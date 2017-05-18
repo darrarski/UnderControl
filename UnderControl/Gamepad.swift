@@ -38,12 +38,3 @@ public class Gamepad: MicroGamepadProfile, GamepadProfile {
     }
 
 }
-
-extension Gamepad {
-
-    public convenience init?(gcGamepad: GCGamepad?) {
-        guard let gcGamepad = gcGamepad else { return nil }
-        self.init(gcGamepad: gcGamepad)
-    }
-
-}
