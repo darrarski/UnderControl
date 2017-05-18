@@ -4,7 +4,7 @@
 ![Platform: iOS | macOS](https://img.shields.io/badge/platform-iOS%20%7C%20macOS-lightgray.svg)
 ![CI build status](https://travis-ci.org/darrarski/UnderControl.svg?branch=master)
 
-`UnderControl` is a wrapper around Apple's `GameController` framework written is Swift. It allows to use [RxSwift](https://github.com/ReactiveX/RxSwift) for working with physical game controllers that are MFI certified. Fully tested and provides functional reactive API.
+**UnderControl** is a wrapper around Apple's [GameController](https://developer.apple.com/reference/gamecontroller) framework written is Swift. It allows to use [RxSwift](https://github.com/ReactiveX/RxSwift) for working with hardware game controllers that are MFI certified. Fully tested. Provides functional reactive API.
 
 Supported MFI controller profiles:
 
