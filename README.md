@@ -1,7 +1,7 @@
 # UnderControl
 
 ![Swift v3.1](https://img.shields.io/badge/swift-v3.1-orange.svg)
-![Platform: iOS | macOS](https://img.shields.io/badge/platform-iOS%20%7C%20macOS-lightgray.svg)
+![Platform: iOS | macOS | tvOS](https://img.shields.io/badge/platform-iOS%20%7C%20macOS%20%7C%20tvOS-lightgray.svg)
 ![CI build status](https://travis-ci.org/darrarski/UnderControl.svg?branch=master)
 
 **UnderControl** is a wrapper around Apple's [GameController](https://developer.apple.com/reference/gamecontroller) framework written is Swift. It allows to use [RxSwift](https://github.com/ReactiveX/RxSwift) for working with hardware game controllers that are MFI certified. Fully tested. Provides functional reactive API.
