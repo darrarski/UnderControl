@@ -90,13 +90,12 @@ class ControllersSpec: QuickSpec {
 
                 context("did connect twice") {
                     var scheduler: TestScheduler!
-                    var observer: TestableObserver<(controller: Controller, connected: Bool)>!
+                    var observer: TestableObserver<Controller>!
 
                     beforeEach {
                         scheduler = TestScheduler(initialClock: 0)
-                        observer = scheduler.createObserver((controller: Controller, connected: Bool).self)
-                        _ = sut.controllerDidConnect.map { ($0, true) }.subscribe(observer)
-                        _ = sut.controllerDidDisconnect.map { ($0, false) }.subscribe(observer)
+                        observer = scheduler.createObserver(Controller.self)
+                        _ = sut.controllerDidConnect.subscribe(observer)
                         notificationCenter.post(
                             name: Notification.Name.GCControllerDidConnect,
                             object: gcController
@@ -108,16 +107,11 @@ class ControllersSpec: QuickSpec {
                     }
 
                     it("should produce three event") {
-                        expect(observer.events.count).to(equal(3))
+                        expect(observer.events.count).to(equal(1))
                     }
 
                     it("should produce correct events") {
-                        expect(observer.events[0].value.element?.controller.gcController).to(be(gcController))
-                        expect(observer.events[0].value.element?.connected).to(beTrue())
-                        expect(observer.events[1].value.element?.controller.gcController).to(be(gcController))
-                        expect(observer.events[1].value.element?.connected).to(beFalse())
-                        expect(observer.events[2].value.element?.controller.gcController).to(be(gcController))
-                        expect(observer.events[2].value.element?.connected).to(beTrue())
+                        expect(observer.events.first?.value.element?.gcController).to(be(gcController))
                     }
                 }
             }

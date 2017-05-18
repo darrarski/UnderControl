@@ -57,10 +57,7 @@ public class Controllers {
 
     private func gcControllerDidConnect(notification: Notification) {
         guard let gcController = notification.object as? GCController else { return }
-        if let (index, controller) = connected.enumerated().first(where: { $1.gcController == gcController }) {
-            connected.remove(at: index)
-            controllerDidDisconnectSubject.onNext(controller)
-        }
+        guard connected.first(where: { $0.gcController == gcController }) == nil else { return }
         let controller = Controller(gcController: gcController)
         connected.append(controller)
         controllerDidConnectSubject.onNext(controller)
