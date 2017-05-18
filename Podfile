@@ -40,6 +40,11 @@ target 'UnderControlApp-macOS' do
   pod_core
 end
 
+target 'UnderControlApp-tvOS' do
+  platform :tvos, '10.2'
+  pod_core
+end
+
 target 'UnderControlTests-iOS' do
   platform :ios, '10.3'
   pod_tests
