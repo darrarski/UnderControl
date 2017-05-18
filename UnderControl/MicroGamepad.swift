@@ -1,7 +1,7 @@
 import GameController
 import RxSwift
 
-public class MicroGamepad {
+public class MicroGamepad: MicroGamepadProfile {
 
     public init(gcMicroGamepad: GCMicroGamepad) {
         self.gcMicroGamepad = gcMicroGamepad
@@ -20,6 +20,8 @@ public class MicroGamepad {
     public var valueChanged: Observable<GCControllerElement> {
         return valueChangedSubject.asObservable()
     }
+
+    // MARK: Private
 
     private let valueChangedSubject = PublishSubject<GCControllerElement>()
 

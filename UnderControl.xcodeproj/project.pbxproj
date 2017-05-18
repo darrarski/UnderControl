@@ -41,6 +41,12 @@
 		31BE5F2B1ECD04F500CA90E2 /* ExtendedGamepadSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB5C1ECBBDA6000AEE0E /* ExtendedGamepadSpec.swift */; };
 		31BE5F2C1ECD04F500CA90E2 /* GamepadSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB481ECBA2A0000AEE0E /* GamepadSpec.swift */; };
 		31BE5F2D1ECD04F500CA90E2 /* MicroGamepadSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DECB561ECBBAFE000AEE0E /* MicroGamepadSpec.swift */; };
+		31BE5F311ECD12D800CA90E2 /* ExtendedGamepadProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BE5F301ECD12D800CA90E2 /* ExtendedGamepadProfile.swift */; };
+		31BE5F321ECD12DD00CA90E2 /* ExtendedGamepadProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BE5F301ECD12D800CA90E2 /* ExtendedGamepadProfile.swift */; };
+		31BE5F341ECD130500CA90E2 /* GamepadProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BE5F331ECD130500CA90E2 /* GamepadProfile.swift */; };
+		31BE5F351ECD130500CA90E2 /* GamepadProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BE5F331ECD130500CA90E2 /* GamepadProfile.swift */; };
+		31BE5F371ECD134F00CA90E2 /* MicroGamepadProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BE5F361ECD134F00CA90E2 /* MicroGamepadProfile.swift */; };
+		31BE5F381ECD134F00CA90E2 /* MicroGamepadProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BE5F361ECD134F00CA90E2 /* MicroGamepadProfile.swift */; };
 		31C5118A1ECA5DC000361D53 /* ControllersSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C511891ECA5DC000361D53 /* ControllersSpec.swift */; };
 		31C5118F1ECA613600361D53 /* GCControllerDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C5118E1ECA613600361D53 /* GCControllerDouble.swift */; };
 		31C511911ECA6D1F00361D53 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C511901ECA6D1F00361D53 /* Controller.swift */; };
@@ -157,6 +163,9 @@
 		316035F11ECD01B10008FA1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		316035F41ECD01B10008FA1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		316035F61ECD01B10008FA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31BE5F301ECD12D800CA90E2 /* ExtendedGamepadProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedGamepadProfile.swift; sourceTree = "<group>"; };
+		31BE5F331ECD130500CA90E2 /* GamepadProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamepadProfile.swift; sourceTree = "<group>"; };
+		31BE5F361ECD134F00CA90E2 /* MicroGamepadProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicroGamepadProfile.swift; sourceTree = "<group>"; };
 		31C511891ECA5DC000361D53 /* ControllersSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllersSpec.swift; sourceTree = "<group>"; };
 		31C5118E1ECA613600361D53 /* GCControllerDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCControllerDouble.swift; sourceTree = "<group>"; };
 		31C511901ECA6D1F00361D53 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
@@ -298,8 +307,11 @@
 				31FA7A731EC91645000669FD /* Controllers.swift */,
 				31E975691ECCC6FB00506BDD /* DirectionPad.swift */,
 				31DECB581ECBBCA1000AEE0E /* ExtendedGamepad.swift */,
+				31BE5F301ECD12D800CA90E2 /* ExtendedGamepadProfile.swift */,
 				31DECB461ECBA268000AEE0E /* Gamepad.swift */,
+				31BE5F331ECD130500CA90E2 /* GamepadProfile.swift */,
 				31DECB521ECBBA37000AEE0E /* MicroGamepad.swift */,
+				31BE5F361ECD134F00CA90E2 /* MicroGamepadProfile.swift */,
 			);
 			path = UnderControl;
 			sourceTree = "<group>";
@@ -1124,10 +1136,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				31BE5F191ECD04E700CA90E2 /* Controller.swift in Sources */,
+				31BE5F371ECD134F00CA90E2 /* MicroGamepadProfile.swift in Sources */,
+				31BE5F341ECD130500CA90E2 /* GamepadProfile.swift in Sources */,
 				31BE5F1B1ECD04E700CA90E2 /* DirectionPad.swift in Sources */,
 				31BE5F1C1ECD04E700CA90E2 /* ExtendedGamepad.swift in Sources */,
 				31BE5F171ECD04E700CA90E2 /* Axis.swift in Sources */,
 				31BE5F181ECD04E700CA90E2 /* Button.swift in Sources */,
+				31BE5F311ECD12D800CA90E2 /* ExtendedGamepadProfile.swift in Sources */,
 				31BE5F1D1ECD04E700CA90E2 /* Gamepad.swift in Sources */,
 				31BE5F1E1ECD04E700CA90E2 /* MicroGamepad.swift in Sources */,
 				31BE5F1A1ECD04E700CA90E2 /* Controllers.swift in Sources */,
@@ -1179,10 +1194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				31E9756A1ECCC6FB00506BDD /* DirectionPad.swift in Sources */,
+				31BE5F381ECD134F00CA90E2 /* MicroGamepadProfile.swift in Sources */,
+				31BE5F351ECD130500CA90E2 /* GamepadProfile.swift in Sources */,
 				31C511911ECA6D1F00361D53 /* Controller.swift in Sources */,
 				31E975721ECCD2CE00506BDD /* Axis.swift in Sources */,
 				31DECB471ECBA268000AEE0E /* Gamepad.swift in Sources */,
 				31DECB591ECBBCA1000AEE0E /* ExtendedGamepad.swift in Sources */,
+				31BE5F321ECD12DD00CA90E2 /* ExtendedGamepadProfile.swift in Sources */,
 				31DECB531ECBBA37000AEE0E /* MicroGamepad.swift in Sources */,
 				31FA7A741EC91645000669FD /* Controllers.swift in Sources */,
 				31DECB4F1ECBB2D1000AEE0E /* Button.swift in Sources */,
