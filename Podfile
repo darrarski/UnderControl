@@ -49,3 +49,8 @@ target 'UnderControlTests-macOS' do
   platform :osx, '10.12'
   pod_tests
 end
+
+target 'UnderControlTests-tvOS' do
+  platform :tvos, '10.2'
+  pod_tests
+end
