@@ -1888,6 +1888,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F1F5C235A0E519BD7299D598 /* Pods-UnderControlTests-iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "UnderControlTests-iOS/Supporting Files/Info.plist";
@@ -1905,6 +1906,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8C1B57C5D50163B34E976A1 /* Pods-UnderControlTests-iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "UnderControlTests-iOS/Supporting Files/Info.plist";
@@ -1923,6 +1925,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 025F8547C9C9D71CDB1D4F59 /* Pods-UnderControlApp-iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
@@ -1942,6 +1945,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F8C6A65EBBCC8A695C5C46C9 /* Pods-UnderControlApp-iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
@@ -2015,6 +2019,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 91F69027093C7A55DE7E19F3 /* Pods-UnderControlTests-tvOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				INFOPLIST_FILE = "UnderControlTests-tvOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.darrarski.UnderControlTests-tvOS";
@@ -2029,6 +2034,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5F87F8F3EB56AE9A4901D5E4 /* Pods-UnderControlTests-tvOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				INFOPLIST_FILE = "UnderControlTests-tvOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pl.darrarski.UnderControlTests-tvOS";
@@ -2044,7 +2050,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D40972A8F37B5D056C5BF8C6 /* Pods-UnderControlApp-tvOS.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "UnderControlApp-tvOS/Supporting Files/Info.plist";
@@ -2062,7 +2068,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB73FDB239BB8C28D5BCDB57 /* Pods-UnderControlApp-tvOS.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "UnderControlApp-tvOS/Supporting Files/Info.plist";
@@ -2173,6 +2179,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 527DDE7CBEC6B4BD182F41B2 /* Pods-UnderControlApp-macOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "UnderControlApp-macOS/Supporting Files/Info.plist";
@@ -2187,6 +2194,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CD601D38A8A55323D02EFE0 /* Pods-UnderControlApp-macOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "UnderControlApp-macOS/Supporting Files/Info.plist";
@@ -2256,6 +2264,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA37E675956910B28839DEC6 /* Pods-UnderControlTests-macOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "UnderControlTests-macOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -2269,6 +2278,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73EC6F513A3C082EEBA2917A /* Pods-UnderControlTests-macOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "UnderControlTests-macOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
