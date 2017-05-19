@@ -129,13 +129,6 @@
 			remoteGlobalIDString = 311DFA4B1ECD0338002F02AF;
 			remoteInfo = "UnderControl-iOS";
 		};
-		311DFA581ECD0338002F02AF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 31FA79FF1EC90F7F000669FD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 316035E71ECD01B10008FA1A;
-			remoteInfo = "UnderControlApp-iOS";
-		};
 		311DFA5F1ECD0338002F02AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 31FA79FF1EC90F7F000669FD /* Project object */;
@@ -813,7 +806,6 @@
 			);
 			dependencies = (
 				311DFA571ECD0338002F02AF /* PBXTargetDependency */,
-				311DFA591ECD0338002F02AF /* PBXTargetDependency */,
 			);
 			name = "UnderControlTests-iOS";
 			productName = "UnderControl-iOSTests";
@@ -1767,11 +1759,6 @@
 			isa = PBXTargetDependency;
 			target = 311DFA4B1ECD0338002F02AF /* UnderControl-iOS */;
 			targetProxy = 311DFA561ECD0338002F02AF /* PBXContainerItemProxy */;
-		};
-		311DFA591ECD0338002F02AF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 316035E71ECD01B10008FA1A /* UnderControlApp-iOS */;
-			targetProxy = 311DFA581ECD0338002F02AF /* PBXContainerItemProxy */;
 		};
 		311DFA601ECD0338002F02AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
